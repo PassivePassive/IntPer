@@ -228,9 +228,20 @@ header .left-header .navi-level-1 li a.logo {
             height: 200px !important;
         }
 }
+/*=====================================================*/
+/*HOME*/
+/*=====================================================*/
+.x-text1 {
+    font-size: 3rem !important;
+    color:rgba(255,255,255, 0.5);
+}
+
+.x-text2 {
+    font-size: 1.4rem !important;
+}
 
 /*=====================================================*/
-/*WELCOME/HOME*/
+/*WELCOME/
 /*=====================================================*/
 
 .welcome-section {
@@ -261,8 +272,11 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 #ourProcess .process-container .intro {
-    height: 100px;
-    max-width: 500px;
+    height: auto;
+    min-height: 50px;
+    width: 70%;
+    min-width: 500px;
+
 /*    font-size: .8rem;*/
 }
 
