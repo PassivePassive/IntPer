@@ -291,6 +291,14 @@ header .left-header .navi-level-1 li a.logo {
     font-size: 4.5rem;
     font-weight: bolder;
     color: #555;
+    height: 70px;
+
+
+    display: flex;
+/*    flex-flow: column wrap;*/
+    justify-content: center;
+/*    align-content: center;*/
+    align-items: center;
 
 }
 
@@ -337,8 +345,19 @@ header .left-header .navi-level-1 li a.logo {
 
     .colDiv .stepnum {
         text-align: left !important;
-
     }
+
+        .colDiv .stepnum p {
+            height: 50px;
+
+
+            display: flex;
+        /*    flex-flow: column wrap;*/
+            justify-content:flex-start;
+        /*    align-content: center;*/
+            align-items: center;
+
+            }
 
 }
 
@@ -350,6 +369,10 @@ header .left-header .navi-level-1 li a.logo {
         width: 90% !important;
         text-align: center !important;
 
+    }
+
+    .colDiv {
+        padding-bottom: 20px !important;
     }
 }
 
