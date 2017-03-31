@@ -22,6 +22,8 @@ body {
 .ip-yellow-overlay {background-color:rgba(255,255,0,0.3);}
 .ip-white-overlay {background-color:rgba(255,255,255, 0.75);}
 .ip-black-overlay {background-color: rgba(0, 0, 0, 0.5);}
+.ip-black-overlay2 {background-color: rgba(0, 0, 0, 0.8);}
+.ip-black-overlay3 {background-color: rgba(0, 0, 0, 0.7);}
 
 
 #background-cs {
@@ -39,7 +41,7 @@ body {
     height: auto;
 }
 
-.overley-cs-home {
+.overlay-cs-home {
   z-index: 1;
   width: 100%;
   height: 100vh;
@@ -54,7 +56,6 @@ body {
 
 
 @media only screen and (max-width: 479px){
-
     h3 {
         font-family: 'Roboto', sans-serif;
         font-size: 1.3rem;
@@ -75,8 +76,6 @@ body {
         padding: 0px;
     }
 }
-
-
 
 /*===============================================================*/
 /*HEADER*/
@@ -231,6 +230,15 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 /*=====================================================*/
+/*WELCOME/HOME*/
+/*=====================================================*/
+
+.welcome-section {
+
+}
+
+
+/*=====================================================*/
 /*TEAM*/
 /*=====================================================*/
 #team {
@@ -315,8 +323,8 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 #royal_preloader.logo .loader {
-    width: 60px;
-    height: 90px;
+    width: 50px;
+    height: 75px;
     position: absolute;
     left: 50%;
     top: 45%;
@@ -386,44 +394,11 @@ header .left-header .navi-level-1 li a.logo {
 /*===============================================================*/
 /*Coming Soon Page*/
 /*===============================================================*/
-.coming_soon_logo {
-    margin-bottom: 20px
+.drk {
+    color: #ccc
 }
 
-/*Logo*/
-.ip-logo-image {
-    width: 250px;
-    height: 100px;
-}
-
-
-.ip-logo-words {
-    width: 190px;
-    height: 70px;
-    margin-left: -15px;
-/*    margin-top: 10px;*/
-}
-
-.ip-logo-image-form{
-    width: 60px;
-    height: 65px;
-    margin-bottom: -20px;
-    margin-top: 10px;
-}
-
-.coming-soon p {
-    font-size: 1.3rem;
-    line-height: 30px;
-    font-weight: normal;
-    font-style: normal !important;
-    color: #555;
-}
-
-.p-big {
-    font-size: 1.5rem !important;
-}
-
-/* Comming Soon */
+/* Overlay */
 .background-cs {
     width: 100%;
     height: 100vh;
@@ -433,8 +408,8 @@ header .left-header .navi-level-1 li a.logo {
     z-index: 0;
 }
 
-.overley-cs {
-  z-index: 1;        
+.overlay-cs-comming-soon {
+  z-index: 1;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -444,7 +419,44 @@ header .left-header .navi-level-1 li a.logo {
   -webkit-background-size: cover !important;
           background-size: cover !important;
   background-attachment: scroll !important;
+
 }
+
+.coming-soon-content {
+    width: 100%;
+    margin: 0 auto;
+    top: 47% !important;
+    left: 50%;
+}
+
+/*Logo*/
+.coming_soon_logo {
+    margin-bottom: 30px
+}
+
+.coming_soon_logo .ip-logo-image {
+    width: 200px;
+    height: 80px;
+}
+
+.coming-soon p {
+    line-height: 30px;
+    font-weight: normal;
+    font-style: normal !important;
+    color: #555;
+
+}
+
+.coming-soon p.drk {
+    color: #ccc;
+}
+
+.p-big {
+    font-size: 1.2rem !important;
+
+}
+
+
 
 /*Subscribe*/
 .newsletter-comingsoon {
@@ -471,7 +483,7 @@ header .left-header .navi-level-1 li a.logo {
     vertical-align: middle;
     text-align: center;
     padding: 0 25px;
-     margin-bottom: 0; 
+     margin-bottom: 0;
     outline: none;
     -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
@@ -486,7 +498,22 @@ ul.countdown li span {
     font-size: 2.3rem;
 }
 
+.coming-soon ul.countdown li p{
+    font-size: .8rem;
+}
+
+.coming-soon ul.countdown li p.drk {
+    color: #ccc;
+}
+
 /*Modal*/
+.ip-logo-image-form {
+    width: 50px;
+    height: 63px;
+    margin-bottom: -20px;
+    margin-top: 10px;
+}
+
 .modal_logo {
     margin-bottom: 0px;
 }
@@ -504,11 +531,51 @@ ul.countdown li span {
     width: 80%;
 }
 
+.modal-body form label {
+    font-size: .8rem;
 
 
+}
+
+/*Social Media Icons*/
+ul.social-dark li a {
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffcc33;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+}
+
+ul.social-dark li a.drk {
+    background: rgba(85,85,85, 0.7);
+}
 
 
-/*---------------------------------------------------*/
+.backto_ {
+    margin-top: 10px;
+
+}
+
+
+.backto_ a {
+/*    text-decoration: underline;*/
+    font-size: .7rem;
+
+/*    color: rgba(85,85,85, 0.7); */
+    color: rgba(182,182,182, 0.7);
+
+}
+
+.backto_ a:hover {
+    text-decoration: underline;
+    color: #facc48;
+    color: rgba(250,204,72,0.7)
+
+}
+
+/*========================*/
+/*Tablet size*/
 @media only screen and (max-width: 767px){
 
 /*Coming Soon text*/
@@ -553,8 +620,130 @@ ul.countdown li span {
 }
 
 
-.seperator {
-    width: 100%;
-    height: 20px;
-    background-color: #fff;
+/*========================*/
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    /*Logo*/
+    .coming_soon_logo {
+        margin-bottom: 30px
+    }
+
+    img.ip-logo-image {
+        width: 120px !important;
+        height: 50px !important;
+    }
+
+    .coming-soon-content {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 10px 30px 10px;
+    }
+
+    .p-big {
+        font-size: 1rem !important;
+    }
+
+
+    /*Countdown*/
+    ul.countdown li span {
+        font-size: 1.9rem;
+    }
+
+    .coming-soon ul.countdown li p{
+        font-size: .7rem;
+    }
+
+
+
+    /*Modal*/
+    .ip-logo-image-form {
+        width: 40px;
+        height: 50px;
+        margin-bottom: -30px;
+        margin-top: 10px;
+    }
+
+    .modal_logo {
+        margin-bottom: 0px;
+    }
+
+    .modal-header {
+        padding: 15px;
+         border-bottom: 0px solid #e5e5e5;
+    }
+
+    .newsletter-comingsoon {
+        min-width: 50%;
+        width: 100% !important;
+        margin: 0px auto;
+    /*    margin-top: 40px;*/
+    }
+
+
+    .newsletter-comingsoon .modal-body {
+        width: 100%;
+    }
+
+    .newsletter-comingsoon .modal-body form{
+        width: 90%;
+    }
+
+    .newsletter-comingsoon .modal-body form label {
+        font-size: .8rem;
+    }
+
+
+    .newsletter-comingsoon .form-group {
+        margin-bottom: 2px;
+    }
+
+    .newsletter-comingsoon .sb-btn {
+        text-align: center;
+    }
+
+    .newsletter-comingsoon .sb-btn .ot-btn {
+        font-size: .65rem;
+/*        font-family: 'Montserrat', sans-serif;*/
+        font-family: 'Ubuntu', sans-serif !important;
+        letter-spacing: 1px;
+
+    }
+
+
+
+
+    /*Social Media Icons*/
+    ul.social-dark li a {
+        background: rgba(0, 0, 0, 0.9);
+        color: #ffcc33;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 15px;
+    }
+
+    ul.social-dark li a.drk {
+        background: rgba(85,85,85, 0.7);
+    }
+
+}
+
+/*===============================================================*/
+/*WHAT WE DO*/
+/*===============================================================*/
+
+
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 767px){
+  #whatWeDo .row {
+     margin: 0px !important;
+   }
+}
+
+@media only screen and (max-width: 479px){
+  #whatWeDo .row {
+     margin: -10px !important;
+   }
 }
