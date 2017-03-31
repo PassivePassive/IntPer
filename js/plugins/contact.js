@@ -9,7 +9,7 @@
 
         var latitude = -1.2924,
             longitude = 36.7780,
-            map_zoom = 17;
+            map_zoom = 16;
 
         var locations = [
             ['<div class="infobox"><span>WE ARE FINANCE<span></br><span>Email: contact@finance.com</span></div>'
