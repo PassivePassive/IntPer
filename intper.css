@@ -237,6 +237,122 @@ header .left-header .navi-level-1 li a.logo {
 
 }
 
+/*=====================================================*/
+/*OUR PROCESS - NEW*/
+/*=====================================================*/
+
+.oldFormat {
+    display: none;
+}
+
+.newFormat {
+    color: #ccc;
+}
+
+#ourProcess .process-container {
+    height: auto;
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#ourProcess .process-container .intro {
+    height: 100px;
+    max-width: 500px;
+/*    font-size: .8rem;*/
+}
+
+#ourProcess .process-container .steps {
+    height: auto;
+    margin: 50px 0px;
+    padding: 0;
+}
+
+#ourProcess .process-container .steps .colDiv  {
+    height: 100%;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.colDiv>*, .colDiv>*>*  {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.colDiv>*>* {}
+
+.colDiv .stepnum {
+    height: 70px;
+
+}
+
+.colDiv .stepnum p {
+    font-size: 4.5rem;
+    font-weight: bolder;
+    color: #555;
+
+}
+
+.colDiv .stepdetail {
+    height: 100%;
+    text-align: left;
+}
+
+.colDiv .stepdetail .sp-title {
+
+}
+
+.colDiv .stepdetail .sp-title p {
+    padding: 0px 5px 25px 0px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bolder;
+/*    color: #555;*/
+    margin-top: 5px;
+    height: 100%;
+
+}
+
+.sline {
+    width: 60px;
+    margin: 0;
+    margin-bottom: 10px;
+/*    border-top: 1px solid #eee;*/
+    border-top: 2px solid #555;
+}
+
+.colDiv .stepdetail .sp-content {
+    font-size: .9rem;
+
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 767px){
+
+     #ourProcess .process-container {
+        width: 80% !important;
+
+    }
+
+    .colDiv .stepnum {
+        text-align: left !important;
+
+    }
+
+}
+
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 479px){
+
+    #ourProcess .process-container {
+        width: 90% !important;
+        text-align: center !important;
+
+    }
+}
+
 
 /*=====================================================*/
 /*TEAM*/
