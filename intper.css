@@ -490,7 +490,8 @@ header .left-header .navi-level-1 li a.logo {
 /*=====================================================*/
 /*PORTFOLIO PAGE*/
 
-.section-empty {    
+.section-empty {
+    margin: 0 auto !important;
 }
 
 .section-empty .content {
@@ -574,6 +575,43 @@ header .left-header .navi-level-1 li a.logo {
 .divider-line.ln2 {
     margin-top: 20px;
 }
+
+/*The carousel*/
+#slider-demo-5.flexslider img {
+/*    width: 870px;*/
+/*    height: auto;*/
+    width: auto;
+    height: 580px;
+    background-size: contain;
+}
+
+#slider-demo-5.flexslider li {
+    display: flex !important;
+    justify-content: center;
+}
+
+#slider-demo-5-nav-thumb img {
+    height: 153px;
+    width: auto
+}
+
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 767px){
+    #slider-demo-5.flexslider {
+/*        height: 350px;*/
+    }
+
+    #slider-demo-5.flexslider img {
+        width: auto;
+        height: 430px;
+        background-size: contain;
+    }
+
+    #slider-demo-5-nav-thumb {
+    }
+}
+
 /*---------------------------------------------------*/
 @media only screen and (max-width: 479px){
     header {
@@ -584,6 +622,12 @@ header .left-header .navi-level-1 li a.logo {
 /*        height: 350px;*/
     }
     
+    #slider-demo-5.flexslider img {
+        width: auto;
+        height: 250px;
+        background-size: contain;
+    }
+
     #slider-demo-5-nav-thumb {
         display: none;
     }
