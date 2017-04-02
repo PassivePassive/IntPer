@@ -232,6 +232,19 @@ button {
     justify-content: center;
 }
 
+.f-hor-nc {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.f-hor-ver-nc {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+}
+
 .rgt {float: right;
 }
 
