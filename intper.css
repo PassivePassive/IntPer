@@ -9,11 +9,11 @@ body {
   overflow: hidden;
 }
 
-
-.btn-sub-color {
+.btn-sub-color, ul.social li a:hover {
 /*  background: #fff;*/
 /*    background: rgba(250, 183, 2, 0.95);*/
 /*    background: #ffcc33;*/
+/*    background: #ebcd1e;*/
     background: #facc48
 /*    font-weight: 600;*/
 }
@@ -485,6 +485,134 @@ header .left-header .navi-level-1 li a.logo {
     }
 
 }
+
+
+/*=====================================================*/
+/*PORTFOLIO PAGE*/
+
+.section-empty {    
+}
+
+.section-empty .content {
+    padding: 0px !important;
+}
+
+.single-project-warp {
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+/*Title*/
+.port_.social-share i.fa {
+    color: #facc48;
+}
+.port_.social-share i.fa:hover {
+    color: #000;
+}
+
+
+.pr-info-container {
+    font-size: .9rem;
+}
+
+.pr-info-container .d1, .pr-info-container .d2 {
+    padding-top: 10px
+
+}
+
+.pr-info-container .d1 {
+
+}
+
+.pr-info-container .d2 {
+
+}
+
+.pj-info {
+   
+}
+
+.pj-info div {
+    margin-bottom: 0px;
+}
+
+.pj-info p {
+    display: inline;
+    color: #555;     
+}
+
+.pj-info .descr {
+
+}
+
+.pj-info .ttl1 {
+    font-size: .9rem;
+    font-weight: bolder;
+/*    text-transform: uppercase;*/
+    width: 120px;    
+}
+
+.pj-info .ttl2 p {
+    
+}
+
+.pj-info .ttl3 p {
+/*    color: rgba(0, 0, 0, 1);*/
+    color: #facc48;
+    font-weight: bold;
+}
+
+
+.pj-description {
+    margin-top: 0px;
+}
+
+.arr-pj-container i.fa {
+    color: #facc48;
+}
+
+.divider-line.ln2 {
+    margin-top: 20px;
+}
+/*---------------------------------------------------*/
+@media only screen and (max-width: 479px){
+    header {
+        height: 60px;
+    }
+    
+    #slider-demo-5.flexslider {
+/*        height: 350px;*/
+    }
+    
+    #slider-demo-5-nav-thumb {
+        display: none;
+    }
+    
+    .flex-direction-nav a {
+        text-decoration: none;
+        display: block;
+        margin: -30px 10px 0 10px;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        z-index: 10;
+        overflow: hidden;
+        opacity: 0;
+        cursor: pointer;
+        color: rgb(80, 80, 80);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        
+        width: 20px;
+        height: 50px;
+
+    }
+}
+
+
 /*=====================================================*/
 /*TEAM*/
 /*=====================================================*/
@@ -510,6 +638,11 @@ header .left-header .navi-level-1 li a.logo {
     width: 100%;
 }
 
+.footer-v1.ip-port {   
+    background: rgba(0, 0, 0, 0.9) !important;
+
+}
+
 .footer_icon img {
     margin-bottom: 15px !important;
 
@@ -521,6 +654,10 @@ header .left-header .navi-level-1 li a.logo {
 
 .footer-right > ul {
     float: left !important;
+}
+
+.footer-v1 i.fa, #to-the-top i.fa {
+    color:rgba(255,255,255, 1);
 }
 
 /*---------------------------------------------------*/
