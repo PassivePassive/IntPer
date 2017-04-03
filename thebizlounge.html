@@ -40,6 +40,28 @@
 
         <!-- Favicons -->
         <link rel="shortcut icon" href="ip_logo.png">
+
+        <!-- ============================= -->
+        <!-- SCRIPTs -->
+        <script src="js/vendor/jquery.min.js"></script>
+
+       <!-- PreLoad
+        ================================================== -->
+        <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
+        <script type="text/javascript">
+            (function($) {
+                "use strict";
+                Royal_Preloader.config({
+                    mode: 'logo', // 'number', "text" or "logo"
+                    logo: 'images/IntPerspectImages/logos/ip_logo_icon.png',
+                    timeout: 1,
+                    showInfo: false,
+                    opacity: 1,
+                    background: ['#FFFFFF']
+                });
+            })(jQuery);
+        </script>
+
     </head>
 
     <!-- ========================================================================== -->
@@ -446,7 +468,6 @@
 
     <!-- ================================================== -->
 	<!-- SCRIPT -->
-    <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/plugins/wow.min.js"></script>
@@ -459,26 +480,10 @@
 	 <!-- Mobile Menu
     ================================================== -->
      <script src="js/plugins/jquery.mobile-menu.js"></script>
-     <!-- PreLoad
-    ================================================== -->
-    <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
-	<script type="text/javascript">
-	(function($) { "use strict";
-	            Royal_Preloader.config({
-	                mode:  'logo', // 'number', "text" or "logo"
-	                logo:  'images/IntPerspectImages/logos/ip_logo_icon.png',
-	                timeout:  0,
-	                showInfo: false,
-	                opacity:  1,
-	                background:     ['#FFFFFF']
-	            });
-	})(jQuery);
-	</script>
 
  	<!-- Global Js
     ================================================== -->
     <script src="js/plugins/custom.js"></script>
-
 
 
     <!-- Carousel JS
