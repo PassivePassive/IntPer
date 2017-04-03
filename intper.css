@@ -127,9 +127,11 @@ header .left-header .navi-level-1 li a.logo {
 #main-navi {}
 
 .active {
+/*
     text-decoration-line: line-through;
     text-decoration-color: #ebcd1e;
     text-decoration-style: solid 3px;
+*/
 
 /*    text-decoration: line-through #ebcd1e solid 3px;*/
 }
@@ -287,8 +289,8 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 #ourProcess .process-container .steps .colDiv  {
-    height: 100%;
-    min-height: 300px;
+    height: auto;
+    min-height: 100px;
     margin: 0 auto;
     padding: 0;
 }
@@ -350,8 +352,20 @@ header .left-header .navi-level-1 li a.logo {
 
 .colDiv .stepdetail .sp-content {
     font-size: .9rem;
+    height: auto;
 
 }
+
+.read_more {
+    font-size: .8rem;
+    font-weight: 100;
+/*    color: #ccc;*/
+    color:  rgba(250, 204, 72, 0.5);
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
 
 /*---------------------------------------------------*/
 @media only screen and (max-width: 767px){
@@ -550,7 +564,7 @@ header .left-header .navi-level-1 li a.logo {
     font-size: .9rem;
     font-weight: bolder;
 /*    text-transform: uppercase;*/
-    width: 120px;    
+    width: 120px !important;
 }
 
 .pj-info .ttl2 p {
@@ -617,7 +631,26 @@ header .left-header .navi-level-1 li a.logo {
 */
 }
 
+.projectContainer .element-item:hover .project-info p.cateProject {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
 
+.projectContainer .element-item .project-info p.cateProject {
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    position: relative;
+    top: 41%;
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+    text-align: center;
+    display: block;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+}
 /*---------------------------------------------------*/
 @media only screen and (max-width: 767px){
     #slider-demo-5.flexslider {
@@ -699,13 +732,28 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 
+.team-text {
+    display: none;
+}
 
+.team-text:hover {
+    display: block;
+}
 
 
 /*=====================================================*/
 /*CONTACT*/
 /*=====================================================*/
+.contact-warp {}
 
+.contact-warp ul.social li a {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px #555 solid;
+    color: #555;
+
+}
 
 /*===============================================================*/
 /*FOOTER*/

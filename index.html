@@ -19,6 +19,9 @@
         <!-- ubuntu font -->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 
+        <!-- read more -->
+<!--       <link rel="stylesheet" href="css/readmore.css">-->
+
         <!-- Vegas -->
         <link rel="stylesheet" href="vegas/vegas.min.css">
         <!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.css">-->
@@ -47,6 +50,12 @@
         <!-- Favicons -->
         <!--      <link rel="shortcut icon" href="favicon.png">-->
         <link rel="shortcut icon" href="ip_logo.png">
+
+
+       <!-- ============================= -->
+        <!-- SCRIPTs -->
+        <script src="js/vendor/jquery.min.js"></script>
+       <script src="js/read_more.js"></script>
     </head>
 
 
@@ -88,7 +97,7 @@
 
                         <!-- Portfolio -->
                         <li>
-                            <a href="#team"><span>The Team</span></a>
+                            <a href="#team"><span>Our Team</span></a>
                         </li>
                         <!-- Contact Us -->
                         <li>
@@ -123,7 +132,7 @@
                                 <p> (+254) 701 277 197</p>
                             </li>
                             <li>
-                                <p>info@interiorperspective.com</p>
+                                <p>info@interiorperspective.co.ke</p>
                             </li>
                         </ul>
                     </div>
@@ -207,7 +216,7 @@
     -->
                                 <!-- Team -->
                                 <li class="has-sub">
-                                    <a href="#team"><span>The Team</span></a>
+                                    <a href="#team"><span>Our Team</span></a>
                                 </li>
 
                                 <li class="has-sub">
@@ -310,7 +319,7 @@
                                 <h1 class="text-cap">design & Build</h1>
                             </div>
                             <div class="col-md-7">
-                                <p>Interior Perspective Ltd is an interior design studio defining spaces with vision, visual interest while preserving function. We specialize in residential interiors, corporate interiors and product design. By immersing ourselves in each client’s culture, we create spaces that tell a meaningful story about the perspective of those who bring them to life.
+                                <p>Interior Perspective Ltd is an Interior Design studio defining spaces with vision, visual interest while preserving function. We specialize in Residential Interiors, Commercial Interiors and Product Design. By immersing ourselves in each client’s culture, we create spaces that tell a meaningful story about the perspective of those who bring them to life.
                                 </p>
                             </div>
 
@@ -341,8 +350,7 @@
                                 <div class="row intro">
                                     <div class="col-sm-12">
                                         <p>
-
-                                            From our initial meeting, to detailing and delivery we constantly improve and refine your design with your desires in mind; to create a space that describes your personality and brand.
+                                            From our initial meeting, to detailing and delivery, we constantly improve and refine the design with your desires in mind; to create a space that represents your personality and brand.
                                         </p>
                                     </div>
 
@@ -369,9 +377,20 @@
 
                                                 <hr class="sline">
 
-                                                <p class="sp-content">
-                                                    The journey starts with you. We help identify our clients’ desires, goals and expectations. With creative research, we will sketch, test and develop spatial plans, innovatively solving the design problem.
-                                                </p>
+                                                <div class="sp-content">
+                                                    <p>The journey starts with you. We help identify our clients’ desires, goals and expectations.
+                                                    </p>
+
+                                                    <div id="step1" class="collapse">
+                                                        <br>
+                                                        With creative research, we will sketch, test and develop spatial plans, innovatively solving the design problem.
+                                                    </div>
+
+                                                    <p class="read_more" data-toggle="collapse" data-target="#step1">
+                                                        ...read more (less)
+                                                    </p>
+
+                                                </div>
                                             </div>
                                         </div>
 
@@ -395,9 +414,18 @@
 
                                                 <hr class="sline">
 
-                                                <p class="sp-content">
-                                                    With the direction established, we will prepare a detailed brief, budget and deadlines. Our designers will refine the ideas, prepare CAD drawings for discussions with suppliers and 3D visuals where required.
-                                                </p>
+                                                <div class="sp-content">
+                                                    <p>With the direction established, we will prepare a detailed brief, budget and deadlines.</p>
+
+                                                    <div id="step2" class="collapse">
+                                                        <br>
+                                                        Our designers will refine the ideas, prepare CAD drawings for discussions with suppliers and 3D visuals where required.
+                                                    </div>
+
+                                                    <p class="read_more" data-toggle="collapse" data-target="#step2">
+                                                        ...read more (less)
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -424,22 +452,23 @@
 
                                                 <hr class="sline">
 
-                                                <p class="sp-content">
-                                                    Project execution:
+                                                <div class="sp-content">
+                                                    <p>Project execution: We will undertake the full project on your behalf;</p>
 
-                                                    We will undertake the full project on your behalf;
-                                                    <br>
-                                                    <br>
+                                                    <div id="step3" class="collapse">
+                                                        <br>
+                                                        <ul>
+                                                            <li>Overseeing sub-contractors</li>
+                                                            <li>Site installations</li>
+                                                            <li>Ensure deliverables are met (timelines and budget)</li>
+                                                        </ul>
 
-                                                    <ul>
-                                                        <li>overseeing sub-contractors</li>
-                                                        <li>site installations</li>
-                                                        <li>ensure deliverables are met (timelines and budget)</li>
-
-                                                    </ul>
-                                                <br>
-                                                Detailing for function and aesthetics is important to us to produce a fully realized design.
-                                                </p>
+                                                        <p>Detailing for function and aesthetics is important to us to produce a fully realized design.</p>
+                                                    </div>
+                                                    <p class="read_more" data-toggle="collapse" data-target="#step3">
+                                                        ...read more (less)
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -496,7 +525,7 @@
                                             <a href="keyfoundation.html" target="_blank">
                                                 <h4 class="title-project text-cap">Key Foundation</h4>
                                             </a>
-                                            <a href="portfolio.html" class="cateProject">Commercial Interiors</a>
+                                            <p class="cateProject">Commercial Interiors</p>
 
                                         </div>
                                     </div>
@@ -510,7 +539,7 @@
                                             <a href="creativehub.html" target="_blank">
                                                 <h4 class="title-project text-cap text-cap">Creative Hub</h4>
                                             </a>
-                                            <a href="#" class="cateProject">Commercial Interiors</a>
+                                            <p class="cateProject">Commercial Interiors</p>
                                         </div>
                                     </div>
 
@@ -525,7 +554,7 @@
                                             <a href="maori.html" target="_blank">
                                                 <h4 class="title-project text-cap">Maori Group</h4>
                                             </a>
-                                            <a href="#" class="cateProject">Commercial</a>
+                                            <p class="cateProject">Commercial Interiors</p>
                                         </div>
                                     </div>
 
@@ -540,7 +569,7 @@
                                             <a href="prokraft.html" target="_blank">
                                                 <h4 class="title-project text-cap">Prokraft Africa</h4>
                                             </a>
-                                            <a href="#" class="cateProject">Commercial Interiors</a>
+                                            <p class="cateProject">Commercial Interiors</p>
                                         </div>
                                     </div>
 
@@ -555,22 +584,22 @@
                                             <a href="legibra.html" target="_blank">
                                                 <h4 class="title-project text-cap">Legibra Holdings</h4>
                                             </a>
-                                            <a href="#" class="cateProject">Commercial Interiors</a>
+                                            <p class="cateProject">Commercial Interiors</p>
                                         </div>
                                     </div>
 
                                     <!-- The Biz Lounge -->
                                     <div id="thebiz" class="element-item Ecommercial">
 
-                                        <a class="portfolio-img-demo" href="bizlounge.html" target="_blank">
+                                        <a class="portfolio-img-demo" href="thebizlounge.html" target="_blank">
                                             <div></div>
                                         </a>
 
                                         <div class="project-info">
-                                            <a href="bizlounge.html" target="_blank">
+                                            <a href="thebizlounge.html" target="_blank">
                                                 <h4 class="title-project text-cap">The Biz Lounge</h4>
                                             </a>
-                                            <a href="#" class="cateProject">Commercial</a>
+                                            <p class="cateProject">Commercial Interiors</p>
                                         </div>
                                     </div>
 
@@ -625,7 +654,11 @@
                                     <div class="item">
                                         <div class="item-team">
                                             <div id="claramwanje" class="portrait-member">
-                                                <img src="images/Ourteam/claraMwanje.jpg" class="img-responsive" alt="Image">
+                                                <img src="images/Ourteam/claraMwanje.png" class="img-responsive" alt="Image">
+                                            </div>
+                                            <div class="team-text">
+                                                <p>Clara’s background in technology created a stepping stone to actualise her passion in design. She studied Information Technology at Jomo Kenyatta University of Agriculture and Technology. Worked in the industry as a Network Administrator before pursuing her post graduate diploma in Interior Design at Buruburu Institute of Fine Arts in Nairobi. She has a strong background in space planning, computer-aided design and project management from her experience working with two top Interior firms in the country. Clara is the Founder and Director of Interior Perspective Limited. She is result oriented and a creative communicator with an eye for detail.</p>
+
                                             </div>
                                             <div class="member-info text-center hvr-float-shadow">
                                                 <h5 class="text-cap">Clara Mwanje</h5>
@@ -635,6 +668,21 @@
                                         </div>
                                     </div>
                                     <!-- end item -->
+
+                                    <div class="item">
+                                        <div class="item-team">
+                                            <div class="portrait-member">
+                                                <img src="images/Ourteam/doreenZaki.jpg" class="img-responsive" alt="Image">
+                                            </div>
+                                            <div class="member-info text-center hvr-float-shadow">
+                                                <h5 class="text-cap">Doreen Zaki</h5>
+                                                <p class="member-job">Finance Director</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end item -->
+
                                     <div class="item">
                                         <div class="item-team">
                                             <div class="portrait-member">
@@ -648,6 +696,8 @@
                                         </div>
                                     </div>
                                     <!-- end item -->
+
+
 
                                 </div>
                             </div>
@@ -720,20 +770,40 @@
                                     <div class="right-contact">
                                         <h3 class="text-cap">Contact Info</h3>
 
+                                        <p>
+				    					Schedule an appointment with us...
+				    				</p>
+
                                         <ul class="address">
                                             <li>
                                                 <p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp; A2 Saachi Plaza, Argwings Kodhek Road, Kilimani, Nairobi</p>
                                             </li>
                                             <li>
-                                                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp; (+254) 701 277 1979</p>
+                                                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp; (+254) 701 277 197</p>
                                             </li>
 
                                             <li>
-                                                <p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp; info@interiorperspective.com</p>
+                                                <p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp; info@interiorperspective.co.ke</p>
                                             </li>
                                             <li>
-                                                <p><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp; Mon-Fri 08:00 - 18:00</p>
+                                                <p><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp; Monday - Friday: 8.00am - 5.00pm</p>
+                                                <p><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp; Saturday: 8.00am - 1.00pm</p>
                                             </li>
+                                        </ul>
+
+                                        <!-- social -->
+                                        <ul class="social">
+                                            <li class="facebook">
+                                                <a href="https://www.facebook.com/InteriorPerspectiveLtd/?fref=ts" target='_blank'>
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="https://www.instagram.com/interior_perspective254/?hl=en" target='_blank'>
+                                                    <i class="fa fa-instagram"></i>
+                                                </a>
+                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -826,7 +896,6 @@
 
         <!-- ============================================================== -->
         <!-- SCRIPTs -->
-        <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins/jquery.waypoints.min.js"></script>
         <script src="js/plugins/wow.min.js"></script>
@@ -972,13 +1041,18 @@
                 Royal_Preloader.config({
                     mode: 'logo', // 'number', "text" or "logo"
                     logo: 'images/IntPerspectImages/logos/ip_logo_icon.png',
-                    timeout: 0,
+                    timeout: 5,
                     showInfo: false,
                     opacity: 1,
                     background: ['#FFFFFF']
                 });
             })(jQuery);
         </script>
+
+
+        <!-- Read more
+           ================================================== -->
+        <script src="js/readmore.js"></script>
 
         <!-- Global Js
            ================================================== -->
