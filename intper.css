@@ -249,7 +249,7 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 /*=====================================================*/
-/*OUR PROCESS - NEW*/
+/*WHAT WE DO - NEW*/
 /*=====================================================*/
 
 .oldFormat {
@@ -578,10 +578,10 @@ header .left-header .navi-level-1 li a.logo {
 
 /*The carousel*/
 #slider-demo-5.flexslider img {
-/*    width: 870px;*/
+    width: 870px;
 /*    height: auto;*/
     width: auto;
-    height: 580px;
+/*    height: 580px;*/
     background-size: contain;
 }
 
@@ -590,9 +590,31 @@ header .left-header .navi-level-1 li a.logo {
     justify-content: center;
 }
 
+#slider-demo-5-nav-thumb {
+
+
+}
+
+#slider-demo-5-nav-thumb>* {
+
+}
+
+#slider-demo-5-nav-thumb ul li {
+/*    width: 271px !important;*/
+    padding-right: 1px !important;
+}
+
 #slider-demo-5-nav-thumb img {
-    height: 153px;
-    width: auto
+
+}
+
+.flex-active-slide {
+/*
+    padding-right: 0px;
+     width: auto !important;
+    float: left;
+    display: block;
+*/
 }
 
 
