@@ -33,7 +33,7 @@ function scrollNav() {
 }
 scrollNav();
 
-function scrollNav() {
+function scrollNavmob() {
   $('.mobNav a').click(function(){
     //Toggle Class
     $(".active").removeClass("active");
@@ -48,4 +48,4 @@ function scrollNav() {
   });
   $('.scrollTop a').scrollTop();
 }
-scrollNav();
+scrollNavmob();
