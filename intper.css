@@ -686,6 +686,21 @@ header .left-header .navi-level-1 li a.logo {
     margin-top: 50px;
 }
 
+.portrait-member {
+/*    width: 350px;*/
+    height: 370px
+}
+
+.owl-wrapper {
+    width: 1170px !important;
+    display: flex !important;
+    justify-content: center;
+
+}
+
+
+
+
 
 /*=====================================================*/
 /*CONTACT*/
