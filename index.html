@@ -54,7 +54,8 @@
 
        <!-- ============================= -->
         <!-- SCRIPTs -->
-        <script src="js/vendor/jquery.min.js"></script>
+<!--        <script src="js/vendor/jquery-3.2.0.min.js"></script>-->
+       <script src="js/vendor/jquery.min.js"></script>
 
        <!-- PreLoad
         ================================================== -->
@@ -394,19 +395,24 @@
 
                                                 <hr class="sline">
 
-                                                <div class="sp-content">
-                                                    <p>The journey starts with you. We help identify our clients’ desires, goals and expectations.
-                                                    </p>
-
-                                                    <div id="step1" class="collapse">
-                                                        <br>
-                                                        With creative research, we will sketch, test and develop spatial plans, innovatively solving the design problem.
+                                                <div id="s1" class="sp-content">
+                                                    <div class="_hidden">
+                                                        <p>
+                                                            The journey starts with you. We help identify our clients’ desires, goals and expectations. 
+                                                            <span class="clickable cl1">
+                                                                ...read more
+                                                            </span>
+                                                        </p>            
                                                     </div>
-
-                                                    <p class="read_more" data-toggle="collapse" data-target="#step1">
-                                                        ...read more (less)
-                                                    </p>
-
+                                                    
+                                                    <div class="_showing ">
+                                                        <p> 
+                                                            With creative research, we will sketch, test and develop spatial plans, innovatively solving the design problem. 
+                                                            <span class="clickable cl2">
+                                                                (read less)
+                                                            </span>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -431,25 +437,31 @@
 
                                                 <hr class="sline">
 
-                                                <div class="sp-content">
-                                                    <p>With the direction established, we will prepare a detailed brief, budget and deadlines.</p>
-
-                                                    <div id="step2" class="collapse">
-                                                        <br>
-                                                        Our designers will refine the ideas, prepare CAD drawings for discussions with suppliers and 3D visuals where required.
+                                                <div id="s2" class="sp-content ">
+                                                    <div class="_hidden">
+                                                        <p>
+                                                            With the direction established, we will prepare a detailed brief, budget and deadlines. 
+                                                            <span class="clickable cl1">
+                                                                ...read more
+                                                            </span>
+                                                        </p>            
                                                     </div>
-
-                                                    <p class="read_more" data-toggle="collapse" data-target="#step2">
-                                                        ...read more (less)
-                                                    </p>
+                                                    
+                                                    <div class="_showing ">
+                                                        <p> 
+                                                            Our designers will refine the ideas, prepare CAD drawings for discussions with suppliers and 3D visuals where required. 
+                                                            <span class="clickable cl2">
+                                                                (read less)
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                                                                       
                                                 </div>
                                             </div>
                                         </div>
 
                                     </div>
-
-
-                                    <!-- step 1 end -->
+                                    <!-- step 2 end -->
 
 
                                     <!------------------>
@@ -469,28 +481,36 @@
 
                                                 <hr class="sline">
 
-                                                <div class="sp-content">
-                                                    <p>Project execution: We will undertake the full project on your behalf;</p>
-
-                                                    <div id="step3" class="collapse">
-                                                        <br>
-                                                        <ul>
-                                                            <li>Overseeing sub-contractors</li>
-                                                            <li>Site installations</li>
-                                                            <li>Ensure deliverables are met (timelines and budget)</li>
-                                                        </ul>
-
-                                                        <p>Detailing for function and aesthetics is important to us to produce a fully realized design.</p>
+                                                <div id="s3" class="sp-content">
+                                                    <div class="_hidden">
+                                                        <p>
+                                                           Project execution: We will undertake the full project on your behalf:
+                                                            <span class="clickable cl1">
+                                                                ...read more
+                                                            </span>
+                                                        </p>            
                                                     </div>
-                                                    <p class="read_more" data-toggle="collapse" data-target="#step3">
-                                                        ...read more (less)
-                                                    </p>
+                                                   
+                                                    <div class="_showing ">
+                                                        <p> 
+                                                            <ul>
+                                                                <li>Overseeing sub-contractors</li>
+                                                                <li>Site installations</li>
+                                                                <li>Ensure deliverables are met (timelines and budget)</li>
+                                                            </ul>
+                                                            
+                                                            Detailing for function and aesthetics is important to us to produce a fully realized design.
+                                                            <span class="clickable cl2">
+                                                                (read less)
+                                                            </span>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                     </div>
-
+                                    <!-- step 3 end -->
                                 </div>
 
 
@@ -760,7 +780,8 @@
                                 <div class="col-md-6 ">
                                     <div class="left-contact">
                                         <h3 class="text-cap"> Send Us a Message</h3>
-                                        <form class="form-inline form-contact-arc" name="contact" method="post" action="send_form_email.php">
+                                        
+                                        <form id="post-form" class="form-inline form-contact-arc" name="contact" method="post" >
                                             <div class="row">
                                                 <div class="form-group col-sm-12 ">
                                                     <input type="text" class="form-control" name="yourName" id="yourName" placeholder="Your Name">
@@ -777,9 +798,31 @@
                                                     <textarea id="textarea" class="form-control" name="comments" rows="6" placeholder="Your Messages"></textarea>
                                                 </div>
                                             </div>
+                                            
+                                            <!----------- additionals ------------>
+                                            <!-- Subject Name -->
+                                            <input type="hidden" name="_subject" value="Email From interiorperspective.co.ke" />
+
+                                            <!-- Thank you page -->
+                                            <input type="hidden" name="_next" value="//interiorperspective.co.ke/thankyou.html" />
+
+                                            <!-- Avoiding spam -->
+                                            <input type="text" name="_gotcha" style="display:none" />
+
+                                            <!----------------------------------->
+                                            
                                             <button class="ot-btn btn-main-color btn-long text-cap btn-submit">Send Mail</button>
                                         </form>
+                                        
+                                        <!--For security Purposes -->
+                                        <script>
+                                            var contactform =  document.getElementById('post-form');
+                                            contactform.setAttribute('action', 'https://formspree.io/' + 'info' + '@' + 'interiorperspective' + '.' + 'co' + '.' + 'ke');
+                                        </script>
                                         <!-- End Form -->
+                                        
+                                        
+                                        
                                     </div>
                                     <!-- End col -->
                                 </div>

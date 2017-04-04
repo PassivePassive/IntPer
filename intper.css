@@ -356,14 +356,26 @@ header .left-header .navi-level-1 li a.logo {
 
 }
 
-.read_more {
+._showing {
+    display: none;
+/*    text-align: center;*/
+}
+
+._showing ul{
+    margin: .7rem .7rem .7rem 2rem;
+}
+
+.clickable {
+    cursor: pointer;
     font-size: .8rem;
     font-weight: 100;
 /*    color: #ccc;*/
     color:  rgba(250, 204, 72, 0.5);
-    text-decoration: underline;
-    cursor: pointer;
+}
 
+.clickable:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba(250, 204, 72, 0.5);
 }
 
 
