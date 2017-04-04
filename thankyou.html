@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>IntPers::Coming Soon</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        
+		<!-- Font -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/elegant-font.css">
+            <!-- ubuntu -->
+           <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+        
+        <!-- Vegas -->
+        <link rel="stylesheet" href="vegas/vegas.min.css">
+<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.css">-->
+        
+		<!-- Main Style -->
+		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="intper.css">
+        <link rel="stylesheet" href="css/custom_styles.css">
+        
+		<!-- color scheme -->
+	  	<link rel="stylesheet" href="switcher/demo.css" type="text/css">
+	  	<link rel="stylesheet" href="switcher/colors/intYellow.css" type="text/css" id="colors">
+
+        <!-- Scroll Bar Mobile Menu
+  		================================================== --> 
+ 		 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+        
+		<!-- Favicons
+		  ================================================== -->
+	  	<link rel="shortcut icon" href="ip_logo.png">
+        
+	</head>
+    
+    
+	<body>
+        
+        <!--========== SWITCHER ============= -->
+
+        <!--========== END OF SWITCHER ============= -->
+        
+        
+		<!-- parallax section -->
+		<section id="section-coming-soon" class="coming-soon no-padding">         
+              
+            <div id="background-cs" class="background-cs"></div>
+            <div class="overlay-cs-comming-soon ip-black-overlay2">
+            
+                <div class="container f-vert">
+                    <div class="coming-soon-content text-center ">
+                        <div class="intro-text">
+                            
+                            <!-- logo -->
+                            <div class="coming_soon_logo">
+                                <img class="ip-logo-image" src="images/IntPerspectImages/logos/ip_logo_horizontal_grey.png" alt="logo">
+
+                            </div>
+
+                            <!-- thank you text -->
+                            <p class="p-big drk">
+                                Thank you for your email! 
+                                <br>
+                                We'll get back to you shortly :D
+                            </p>
+                        </div>
+    
+                        
+
+
+                        <!-- Contact Us -->
+                        <ul class="social social-dark">
+
+                            <!-- Facebok -->
+                            <li class="facebook">
+                                <a class="drk" href="https://www.facebook.com/InteriorPerspectiveLtd/?fref=ts" target='_blank'><i class="fa fa-facebook"></i></a>
+                            </li>
+
+
+                            <!-- Instagram -->
+                            <li class="instagram">
+                                <a class="drk" href="https://www.instagram.com/interior_perspective254/?hl=en" target='_blank'><i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                          </ul>
+                        <div class="backto_">
+                            <a href="index.html" >back to countdown </a>
+                        </div>
+                    </div>    
+                </div> <!-- container end -->
+                
+            </div><!-- overlay-cs end -->
+    	</section>
+	     
+        
+<!------------------------------------------------->
+<!-- Back To Top -->
+	<!-- SCRIPT -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins/countdown-custom.js"></script>
+    
+
+    <!----------------------------------------->
+    <!--Vegas-->
+    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.js"></script>
+<!--    <script type="text/javascript"  src="js/vegas-scripts.js"></script>-->
+    <script>
+        $("#background-cs").vegas({
+//        overlay: true,
+        transition: 'fade',
+        transitionDuration: 3000,
+        delay: 10000,
+//        animation: 'random',
+//        animationDuration: 20000,
+            slides: [
+                { src: "/images/IntPerspectImages/reipwebsitedesign/01.jpg" },
+                { src: "/images/IntPerspectImages/reipwebsitedesign/02.jpg" },
+                { src: "/images/IntPerspectImages/reipwebsitedesign/03.jpg" },
+                { src: "/images/IntPerspectImages/reipwebsitedesign/04.jpg" },
+                { src: "/images/IntPerspectImages/reipwebsitedesign/05.jpg" },
+                { src: "/images/IntPerspectImages/reipwebsitedesign/06.jpg" },
+            
+            
+            ],
+//                overlay: '/vegas/overlays/01.png'
+            });
+    </script>
+    <!-- Switcher
+    ================================================== -->
+    <script src="switcher/demo.js"></script>
+
+	<!-- PreLoad
+    ================================================== --> 
+    <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
+	<script type="text/javascript">
+	(function($) { "use strict";
+	            Royal_Preloader.config({
+	                mode:           'logo', // 'number', "text" or "logo"
+	                logo:           'images/IntPerspectImages/logos/ip_logo_icon.png',
+	                timeout:        2,
+	                showInfo:       false,
+	                opacity:        1,
+	                background:     ['#FFFFFF']
+	            });
+	})(jQuery);
+	</script>
+	</body>
+</html>
