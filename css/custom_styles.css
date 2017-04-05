@@ -252,7 +252,7 @@ button {
 .br-word {
     height: auto;
     word-wrap: break-word;
-    white-space: normal;
+    white-space: normal !important;
 }
 
 

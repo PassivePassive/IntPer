@@ -1,20 +1,6 @@
 $(document).ready(function() {
-        
-//    (function( $ ){
-//       $.fn.readmore = function() {
-//            $("._showing").fadeToggle('slow');
-//            $(".clickable.cl1").toggle();
-//            return this;
-//       }; 
-//    })( jQuery );
-//
-//    
-//    
-//    //to show the hidden and hide the initial and vice versa
-//    $(".clickable.cl1").click().readmore ();
-//    
-//   
-    
+ 
+//    ========================================================
 //    to show the hidden and hide the initial and vice versa
     $("#s1 .cl1").click(function() {
         $("#s1 ._showing").fadeToggle('slow');
@@ -51,5 +37,50 @@ $(document).ready(function() {
         $("#s3 .cl1").fadeIn();
         
     });
+    
+//    ========================================================
+//    Team info
+  
+    $(".team-text p").hide();
+    
+    //    claramwanje
+    $( ".team-text.cm" ).hover(
+        function() {
+            $( ".team-text.cm p" ).fadeIn('slow');
+            $( this ).addClass("_hover").fadeIn('slow');
+            
+        }, 
+        function(){
+            $( ".team-text.cm p" ).fadeOut();
+            $( this ).removeClass("_hover");
+            
+        }); 
+    
+//  doreenzaki
+    $( ".team-text.dz" ).hover(
+        function() {
+            $( ".team-text.dz p" ).fadeIn('slow');
+            $( this ).addClass("_hover").fadeIn('slow');
+            
+        }, 
+        function(){
+            $( ".team-text.dz p" ).fadeOut();
+            $( this ).removeClass("_hover");
+            
+        }); 
+    
+//  anthonyodhiambo
+    $( ".team-text.ao" ).hover(
+        function() {
+            $( ".team-text.ao p" ).fadeIn('slow');
+            $( this ).addClass("_hover").fadeIn('slow');
+            
+        }, 
+        function(){
+            $( ".team-text.ao p" ).fadeOut();
+            $( this ).removeClass("_hover");
+            
+        }); 
+    
     
 });

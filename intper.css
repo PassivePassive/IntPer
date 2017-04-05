@@ -240,8 +240,65 @@ header .left-header .navi-level-1 li a.logo {
 
 .x-text2 {
     font-size: 1.4rem !important;
+    color:rgba(255,255,255, 0.7);
 }
 
+/*
+.tp-mask-wrap {
+    width: 
+}
+*/
+
+.top-text-container {}
+
+.top-text-container .tt-descr {
+    padding: 10px !important;
+    white-space: normal !important;
+    width: 1000px !important;
+    text-align: center;
+    margin-top: 0px !important;        
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 991px){
+    
+    .top-text-container .tt-descr {
+        padding: 10px !important;
+        white-space: normal !important;
+        width: 700px !important;
+        text-align: center;
+        margin-top: 50px !important;        
+    }
+
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 767px){
+    
+    .top-text-container .tt-descr {
+        padding: 10px !important;
+        white-space: normal !important;
+        width: 450px !important;
+        text-align: center;
+        margin-top: 50px !important;        
+    }
+
+}
+
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 479px){
+
+    .top-text-container .tt-descr {
+/*        position: relative !important;*/
+        padding: 10px !important;
+        white-space: normal !important;
+        width: 350px !important;
+        text-align: center;
+        margin-top: 50px !important;
+        
+    }
+}
 /*=====================================================*/
 /*WELCOME/
 /*=====================================================*/
@@ -731,25 +788,86 @@ header .left-header .navi-level-1 li a.logo {
     margin-top: 50px;
 }
 
-.portrait-member {
+.owl-wrapper {
+
+}
+
+.owl-item {}
+
+.item-team {    
+    cursor: pointer;
+}
+
+
+/*The image*/
+.item-team .portrait-member{
 /*    width: 350px;*/
     height: 370px
 }
 
-.owl-wrapper {
-    width: 1170px !important;
-    display: flex !important;
-    justify-content: center;
-
+/*The text*/
+.item-team .team-text {
+    width: 90%;
+    height: 100%;
 }
-
 
 .team-text {
-    display: none;
+    position: absolute;
+    top: 0%;
+    padding: 15px;
+    text-align: justify;
 }
 
+.team-text p {
+/*    display: none;*/
+}
+
+._hover {
+    opacity: 1;
+    color: #fff;
+    background-color: rgba(255, 204, 51, 0.952941);
+    z-index: 100;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.item-team .team-text{
+    
+}
+
+.projectContainer .element-item:hover .project-info {
+    opacity: 1;
+    background: rgba(235, 205, 30, 0.952941);
+}
+    
+/*The box below*/
+.item-team .member-info {
+
+}
+
+
+
+
 .team-text:hover {
-    display: block;
+/*    display: block;*/
+}
+
+
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 767px){
+
+
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 479px){
+    .item-team .portrait-member{
+        height: 300px;
+        font-size: .9rem;
+    }
 }
 
 
