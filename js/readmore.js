@@ -38,49 +38,46 @@ $(document).ready(function() {
         
     });
     
-//    ========================================================
-//    Team info
+
+    //    ========================================================
+    //    Team info on click
   
     $(".team-text p").hide();
     
-    //    claramwanje
-    $( ".team-text.cm" ).hover(
-        function() {
-            $( ".team-text.cm p" ).fadeIn('slow');
-            $( this ).addClass("_hover").fadeIn('slow');
-            
-        }, 
-        function(){
-            $( ".team-text.cm p" ).fadeOut();
-            $( this ).removeClass("_hover");
-            
-        }); 
+    //  claramwanje
+    $("#claramwanje .cl1").click(function() {
+        $(".team-text.cm").addClass("_hover").fadeIn('slow');
+        $(".team-text.cm p" ).fadeIn('slow');
+    });
+
+    $("#claramwanje .cl2").click(function() {
+        $( ".team-text.cm p" ).hide();
+        $(".team-text.cm").removeClass("_hover");
+    });
+
+    //  doreenzaki
+    $("#doreenzaki .cl1").click(function() {
+        $(".team-text.dz").addClass("_hover").fadeIn('slow');
+        $(".team-text.dz p" ).fadeIn('slow');
+    });
+
+    $("#doreenzaki .cl2").click(function() {
+        $( ".team-text.dz p" ).hide();
+        $(".team-text.dz").removeClass("_hover");
+
+    });
+
     
-//  doreenzaki
-    $( ".team-text.dz" ).hover(
-        function() {
-            $( ".team-text.dz p" ).fadeIn('slow');
-            $( this ).addClass("_hover").fadeIn('slow');
-            
-        }, 
-        function(){
-            $( ".team-text.dz p" ).fadeOut();
-            $( this ).removeClass("_hover");
-            
-        }); 
+    //  claramwanje
+    $("#anthonyOdhiambo .cl1").click(function() {
+        $(".team-text.ao").addClass("_hover").fadeIn('slow');
+        $(".team-text.ao p" ).fadeIn('slow');
+    });
     
-//  anthonyodhiambo
-    $( ".team-text.ao" ).hover(
-        function() {
-            $( ".team-text.ao p" ).fadeIn('slow');
-            $( this ).addClass("_hover").fadeIn('slow');
-            
-        }, 
-        function(){
-            $( ".team-text.ao p" ).fadeOut();
-            $( this ).removeClass("_hover");
-            
-        }); 
-    
+    $("#anthonyOdhiambo .cl2").click(function() {
+        $( ".team-text.ao p" ).hide();
+        $(".team-text.ao").removeClass("_hover");
+
+    });
     
 });

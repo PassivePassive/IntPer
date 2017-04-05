@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>IntPers::Coming Soon</title>
+		<title>Thank You!::Interior Perspective</title>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -29,24 +29,40 @@
 	  	<link rel="stylesheet" href="switcher/demo.css" type="text/css">
 	  	<link rel="stylesheet" href="switcher/colors/intYellow.css" type="text/css" id="colors">
 
-        <!-- Scroll Bar Mobile Menu
-  		================================================== --> 
+        <!-- Scroll Bar Mobile Menu -->
  		 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
         
-		<!-- Favicons
-		  ================================================== -->
+		<!-- Favicons -->
 	  	<link rel="shortcut icon" href="ip_logo.png">
         
+        <!-- ============================= -->
+        <!-- SCRIPTs -->
+        <!--        <script src="js/vendor/jquery-3.2.0.min.js"></script>-->
+        <script src="js/vendor/jquery.min.js"></script>
+
+        <!-- PreLoad
+            ================================================== -->
+        <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
+        <script type="text/javascript">
+            (function($) {
+                "use strict";
+                Royal_Preloader.config({
+                    mode: 'logo', // 'number', "text" or "logo"
+                    logo: 'images/IntPerspectImages/logos/ip_logo_icon.png',
+                    timeout: 1,
+                    showInfo: false,
+                    opacity: 1,
+                    background: ['#FFFFFF']
+                });
+            })(jQuery);
+
+        </script>
+
 	</head>
     
     
 	<body>
-        
-        <!--========== SWITCHER ============= -->
 
-        <!--========== END OF SWITCHER ============= -->
-        
-        
 		<!-- parallax section -->
 		<section id="section-coming-soon" class="coming-soon no-padding">         
               
@@ -59,7 +75,9 @@
                             
                             <!-- logo -->
                             <div class="coming_soon_logo">
-                                <img class="ip-logo-image" src="images/IntPerspectImages/logos/ip_logo_horizontal_grey.png" alt="logo">
+                                <a href="index.html">
+                                    <img class="ip-logo-image" src="images/IntPerspectImages/logos/ip_logo_horizontal_grey.png" alt="logo">
+                                </a>
 
                             </div>
 
@@ -90,7 +108,7 @@
                             </li>
                           </ul>
                         <div class="backto_">
-                            <a href="index.html" >back to countdown </a>
+                            <a href="index.html" >back home </a>
                         </div>
                     </div>    
                 </div> <!-- container end -->
@@ -111,45 +129,35 @@
     <!--Vegas-->
     <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.js"></script>
 <!--    <script type="text/javascript"  src="js/vegas-scripts.js"></script>-->
-    <script>
-        $("#background-cs").vegas({
-//        overlay: true,
-        transition: 'fade',
-        transitionDuration: 3000,
-        delay: 10000,
-//        animation: 'random',
-//        animationDuration: 20000,
-            slides: [
-                { src: "/images/IntPerspectImages/reipwebsitedesign/01.jpg" },
-                { src: "/images/IntPerspectImages/reipwebsitedesign/02.jpg" },
-                { src: "/images/IntPerspectImages/reipwebsitedesign/03.jpg" },
-                { src: "/images/IntPerspectImages/reipwebsitedesign/04.jpg" },
-                { src: "/images/IntPerspectImages/reipwebsitedesign/05.jpg" },
-                { src: "/images/IntPerspectImages/reipwebsitedesign/06.jpg" },
-            
-            
-            ],
-//                overlay: '/vegas/overlays/01.png'
-            });
-    </script>
-    <!-- Switcher
-    ================================================== -->
-    <script src="switcher/demo.js"></script>
 
-	<!-- PreLoad
-    ================================================== --> 
-    <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
-	<script type="text/javascript">
-	(function($) { "use strict";
-	            Royal_Preloader.config({
-	                mode:           'logo', // 'number', "text" or "logo"
-	                logo:           'images/IntPerspectImages/logos/ip_logo_icon.png',
-	                timeout:        2,
-	                showInfo:       false,
-	                opacity:        1,
-	                background:     ['#FFFFFF']
-	            });
-	})(jQuery);
-	</script>
+    <script>
+        //---------------------------------------//
+        // Background Images
+        $("#background-cs").vegas({
+            //        overlay: true,
+            transition: 'fade',
+            transitionDuration: 3000,
+            delay: 7000,
+            //        animation: 'random',
+            //        animationDuration: 20000,
+            slides: [{
+                    src: "/images/IntPerspectImages/intPersAssets/bannerImages/banner3.jpg"
+                },
+                {
+                    src: "/images/IntPerspectImages/intPersAssets/bannerImages/banner2.jpg"
+                },
+                {
+                    src: "/images/IntPerspectImages/intPersAssets/bannerImages/banner4.jpg"
+                },
+
+                {
+                    src: "/images/IntPerspectImages/intPersAssets/bannerImages/banner6.jpg"
+                },
+                //
+            ],
+            //                overlay: '/vegas/overlays/01.png'
+        });
+    </script>
+
 	</body>
 </html>
