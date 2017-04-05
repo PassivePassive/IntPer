@@ -604,19 +604,23 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 .pj-info {
+
    
 }
 
 .pj-info div {
     margin-bottom: 0px;
+
 }
 
 .pj-info p {
     display: inline;
-    color: #555;     
+    color: #555;
+    vertical-align: top;
 }
 
 .pj-info .descr {
+    height: auto
 
 }
 
@@ -625,6 +629,10 @@ header .left-header .navi-level-1 li a.logo {
     font-weight: bolder;
 /*    text-transform: uppercase;*/
     width: 120px !important;
+}
+
+.pj-info .ttl2 {
+   width: calc(100% - 120px) !important;
 }
 
 .pj-info .ttl2 p {
@@ -651,12 +659,28 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 /*The carousel*/
-#slider-demo-5.flexslider img {
-    width: 870px;
-/*    height: auto;*/
+#slider-demo-5.flexslider {
     width: auto;
-/*    height: 580px;*/
+    height: auto;
+/*    max-height: 580px;*/
+/*    padding: 50px 100px*/
+
+}
+
+#slider-demo-5.flexslider li {
+
+
+}
+
+#slider-demo-5.flexslider img {
+    width: 100%;
+    height: auto;
     background-size: contain;
+}
+
+.flexslider .slides img {
+    height: auto;
+    max-width: 100%;
 }
 
 #slider-demo-5.flexslider li {

@@ -235,7 +235,7 @@ button {
 .f-hor-nc {
     display: flex;
     align-content: center;
-    align-items: center;
+/*    align-items: center;*/
 }
 
 .f-hor-ver-nc {
