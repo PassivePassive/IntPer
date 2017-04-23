@@ -287,10 +287,16 @@ header .left-header .navi-level-1 li a.logo {
 /*        position: relative !important;*/
         padding: 10px !important;
         white-space: normal !important;
-        width: 350px !important;
+        max-width: 350px !important;
+        width: 290px !important;
+/*        width: auto;*/
         text-align: center;
+        font-size: 1.15rem !important;
         margin-top: 50px !important;
         
+        line-height: 37px;
+        letter-spacing: 2.5px;
+
     }
 }
 /*=====================================================*/
@@ -300,6 +306,24 @@ header .left-header .navi-level-1 li a.logo {
 .welcome-section {
 
 }
+
+.welcome-section h1 {
+    font-size: 48px;
+    color: #333;
+    font-weight: bold;
+    margin-left: -4px;
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 991px){
+
+    .welcome-section h1 {
+        margin-left: 0px;
+    }
+
+
+}
+
 
 /*=====================================================*/
 /*WHAT WE DO - NEW*/
@@ -418,7 +442,7 @@ header .left-header .navi-level-1 li a.logo {
 
 .clickable {
     cursor: pointer;
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 100;
 /*    color: #ccc;*/
     color:  rgba(250, 204, 72, 0.5);
@@ -458,6 +482,14 @@ header .left-header .navi-level-1 li a.logo {
 
 /*---------------------------------------------------*/
 @media only screen and (max-width: 479px){
+
+    #ourProcess .process-container .intro {
+        height: auto;
+        min-height: 50px;
+        width: 100%;
+        min-width: 100px;
+        /* font-size: .8rem; */
+    }
 
     #ourProcess .process-container {
         width: 90% !important;
@@ -563,6 +595,34 @@ header .left-header .navi-level-1 li a.logo {
 
 /*=====================================================*/
 /*PORTFOLIO PAGE*/
+.portfolio2 {
+    display: none;
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 767px){
+
+    .portfolio2 {
+        display: block;
+    }
+
+    .portfolio1 {
+        display: none;
+    }
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 479px){
+
+    .portfolio2 {
+        display: block;
+    }
+
+    .portfolio1 {
+        display: none;
+    }
+
+}
 
 .section-empty {
     margin: 0 auto !important;
@@ -684,8 +744,10 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 #slider-demo-5.flexslider li {
+/*
     display: flex !important;
     justify-content: center;
+*/
 }
 
 #slider-demo-5-nav-thumb {
@@ -715,6 +777,50 @@ header .left-header .navi-level-1 li a.logo {
 */
 }
 
+.projectContainer .element-item .project-info div {
+  display: block;
+  position: relative;
+  top: 40.5%;
+  -webkit-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+          transform: translateY(-50px);
+  text-align: center;
+  -webkit-transition: all 0.6s ease 0s;
+          transition: all 0.6s ease 0s;
+}
+.projectContainer .element-item .project-info div.cateProject {
+  font-size: 15px;
+  line-height: 18px;
+  color: #555;
+  position: relative;
+  top: 41%;
+  -webkit-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px);
+  text-align: center;
+  display: block;
+  -webkit-transition: all 0.6s ease 0s;
+          transition: all 0.6s ease 0s;
+}
+.projectContainer .element-item .project-info div.cateProject:hover {
+  color: #222;
+}
+.projectContainer .element-item:hover .project-info {
+  opacity: 1;
+  background: rgba(235, 205, 30, 0.95);
+}
+.projectContainer .element-item:hover .project-info div {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.projectContainer .element-item:hover .project-info div.cateProject {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+
 .projectContainer .element-item:hover .project-info p.cateProject {
     -webkit-transform: translateY(0%);
     -ms-transform: translateY(0%);
@@ -735,6 +841,8 @@ header .left-header .navi-level-1 li a.logo {
     -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
 }
+
+
 /*---------------------------------------------------*/
 @media only screen and (max-width: 767px){
     #slider-demo-5.flexslider {
@@ -795,6 +903,65 @@ header .left-header .navi-level-1 li a.logo {
     }
 }
 
+/*Slider 2*/
+#port_img {
+    height: 500px !important;
+}
+
+.pgwSlider img {
+/*    height: 20px;*/
+
+}
+
+.pgwSlider .ps-current {
+    position: relative;
+}
+
+/*
+.pgwSlider .ps-current img {
+    max-width: 100%;
+    min-width: auto;
+    width: auto;
+    height: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: margin-top 250ms linear;
+}
+*/
+
+.pgwSlider .ps-current img {
+
+    display: block;
+    margin: auto;
+
+    max-width: 100%;
+    min-width: auto;
+    width: auto;
+    height: 100%;
+    display: block;
+    transition: margin-top 250ms linear;
+    vertical-align: middle;
+
+}
+
+ul.pgwSlider > li span, .pgwSlider > .ps-list > li span {
+    display: none;
+/*
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+*/
+}
 
 /*=====================================================*/
 /*TEAM*/
@@ -822,7 +989,7 @@ header .left-header .navi-level-1 li a.logo {
 
 /*The text*/
 .item-team .team-text {
-    width: 90%;
+    width: 91%;
     height: 100%;
 }
 
@@ -831,10 +998,17 @@ header .left-header .navi-level-1 li a.logo {
     top: 0%;
     padding: 15px;
     text-align: justify;
+    font-weight: 400;
+    overflow-y:auto;
 }
 
 .team-text p {
 /*    display: none;*/
+}
+
+.team-text .top_p {
+    margin-top: 10px
+
 }
 
 ._hover {
@@ -848,11 +1022,6 @@ header .left-header .navi-level-1 li a.logo {
     transition: all 0.5s ease;
 }
 
-.item-team .team-text{
-    font-weight: 400;
-    
-}
-
 .projectContainer .element-item:hover .project-info {
     opacity: 1;
     background: rgba(235, 205, 30, 0.952941);
@@ -863,34 +1032,22 @@ header .left-header .navi-level-1 li a.logo {
 
 }
 
-.team-text {
-    overflow-y: scroll;
-}
 
-.clickable {
-    cursor: pointer;
-    font-size: .8rem;
-    font-weight: 100;
-/*    color: #ccc;*/
-    color:  rgba(250, 204, 72, 0.5);
-}
 
-.clickable:hover {
-    text-decoration: underline;
-    text-decoration-color: rgba(250, 204, 72, 0.5);
-}
-
+.item {}
 .item .cl1 {
     color:  rgba(250, 204, 72, 1);
 }
 
 .item .cl2 {
     color: #555;
-    width: 90%;
+    width: auto;
     font-weight: 500;
-    text-align: center;
+/*    text-align: center;*/
+    font-size: .8rem;
     position: fixed;
-    bottom: 10px;
+    top: 0px;
+    right: 7%
 }
 
 .item .cl2:hover {
@@ -901,7 +1058,7 @@ header .left-header .navi-level-1 li a.logo {
     font-weight: 500;
     color: #fff;
     font-size: .9rem;
-    margin-top: 10px;
+    margin: 0;
     font-style: italic;
 }
 
@@ -910,6 +1067,29 @@ header .left-header .navi-level-1 li a.logo {
     font-weight: 600;
 /*    text-decoration: underline*/
 
+}
+
+/*Scrollbar*/
+/*
+ *  STYLE 3
+ */
+
+.scroll1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+/*    -webkit-box-shadow: inset 0 0 6px rgba(192,192,192,0.85);*/
+	background-color: #F5F5F5;
+}
+
+.scroll1::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+
+.scroll1::-webkit-scrollbar-thumb
+{
+	background-color: rgba(0,0,0,0.2);
 }
 
 /*---------------------------------------------------*/
