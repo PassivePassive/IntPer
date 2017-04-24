@@ -30,6 +30,9 @@
         <!-- SCROLL BAR MOBILE MENU -->
         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 
+        <!-- slider -->
+        <link rel="stylesheet" href="PgwSlider/pgwslider.css">
+
         <!-- Main Style -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="intper.css">
@@ -44,6 +47,14 @@
         <!-- ============================= -->
         <!-- SCRIPTs -->
         <script src="js/vendor/jquery.min.js"></script>
+        <script src="PgwSlider/pgwslider.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                var pgwSlider = $('.pgwSlider').pgwSlider();
+            });
+
+        </script>
 
        <!-- PreLoad
         ================================================== -->
@@ -54,7 +65,7 @@
                 Royal_Preloader.config({
                     mode: 'logo', // 'number', "text" or "logo"
                     logo: 'images/IntPerspectImages/logos/ip_logo_icon.png',
-                    timeout: 1,
+                    timeout: 0,
                     showInfo: false,
                     opacity: 1,
                     background: ['#FFFFFF']
@@ -342,53 +353,43 @@
 
                                 </div><!-- End Row -->
 
-                            <!-- Content Image Big -->
-                            <div class="flexslider slider nav-middle-mobile" id="slider-demo-5" data-options="controlNav:false,animationLoop:false,slideshow:false,sync:#slider-demo-5-nav-thumb">
-                                <ul class="slides">
-                                    <ul class="slides ">
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/creativeHub4.jpg" alt="creativeHub pic1" />
+
+                           <!-- IMAGES -->
+                            <div id="port_img">
+                                <ul class="pgwSlider">
+                                    <li>
+                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/tn/creativeHub4.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/creativeHub/creativeHub4.jpg">
                                     </li>
                                     <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/creativeHub3.jpg" alt="creativeHub pic2" />
+                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/tn/creativeHub3.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/creativeHub/creativeHub3.jpg">
                                     </li>
                                     <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/creativeHub2.jpg" alt="creativeHub pic3" />
+                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/tn/creativeHub2.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/creativeHub/creativeHub2.jpg">
+
                                     </li>
                                     <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/creativeHub1.jpg" alt="creativeHub pic4" />
+                                       <img src="images/IntPerspectImages/intPersAssets/creativeHub/tn/creativeHub1.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/creativeHub/creativeHub1.jpg">
+                                        <!-- <span>The Exhibition Room</span> -->
                                     </li>
-                                </ul>
+
 
                                 </ul>
+
                             </div>
 
-                            <!-- Content Slider Images -->
-                            <div id="slider-demo-5-nav-thumb" class="flexslider carousel nav-thumb nav-middle-mobile" data-options="controlNav:false,animationLoop:false,slideshow:false,asNavFor:#slider-demo-5,minWidth:50,numItems:5">
-                                <ul class="slides">
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/tn/creativeHub4.jpg" alt="creativeHub pic1" />
-                                    </li>
-                                    <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/tn/creativeHub3.jpg" alt="creativeHub pic2" />
-                                    </li>
-                                    <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/tn/creativeHub2.jpg" alt="creativeHub pic3" />
-                                    </li>
-                                    <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/creativeHub/tn/creativeHub1.jpg" alt="creativeHub pic4" />
-                                    </li>
-                                </ul>
-                            </div>
 <!--                            <hr class="space" />-->
 
                             <!---Next/Previous -->
                             <div class="divider-line ln2"></div>
 
                             <p class="arr-pj-container text-center">
-                                <a href="keyfoundation.html" class="prev-pj-arr text-cap"><i class="fa fa-angle-left" aria-hidden="true"></i> Prev</a>
-                                <a href="index.html#portfolio" class="btn-portfolio"><i class="fa fa-th" aria-hidden="true"></i></a>
-                                <a href="maori.html" class="next-pj-arr text-cap">Next <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+                                <a href="keyfoundation.html" target="_blank" class="prev-pj-arr text-cap"><i class="fa fa-angle-left" aria-hidden="true"></i> Prev</a>
+                                <a href="index.html#portfolio" target="_blank" class="btn-portfolio"><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <a href="maori.html" target="_blank" class="next-pj-arr text-cap">Next <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
                             </p>
                             <div class="divider-line"></div>
 
@@ -469,19 +470,22 @@
     ================================================== -->
      <script src="js/plugins/jquery.mobile-menu.js"></script>
 
+
  	<!-- Global Js
     ================================================== -->
     <script src="js/plugins/custom.js"></script>
 
 
 
-    <!-- Carousel JS
-    ================================================== -->
+<!--
+     Carousel JS
+    ==================================================
     <script src="script.js"></script>
     <script src='js/plugins/parallax.min.js'></script>
     <script src="js/plugins/imagesloaded.min.js"></script>
     <script src='js/plugins/flexslider/jquery.flexslider-min.js'></script>
     <script src='js/plugins/jquery.tab-accordion.js'></script>
+-->
 
     </body>
 
