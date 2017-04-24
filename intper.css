@@ -595,6 +595,8 @@ header .left-header .navi-level-1 li a.logo {
 
 /*=====================================================*/
 /*PORTFOLIO PAGE*/
+/*---------------------------------------------------*/
+
 .portfolio2 {
     display: none;
 }
@@ -624,6 +626,8 @@ header .left-header .navi-level-1 li a.logo {
 
 }
 
+
+/*---------------------------------------------------*/
 .section-empty {
     margin: 0 auto !important;
 }
@@ -902,6 +906,24 @@ header .left-header .navi-level-1 li a.logo {
 
     }
 }
+
+/*---------------------------------------------------*/
+/*Title*/
+ .sub-header-1 {
+    height: 250px;
+}
+
+.sub-header-portfolio-grid-1 {
+/*    background-image: url(images/Overlay/15.jpg);*/
+    background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(
+      rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)
+    ),
+    /* bottom, image */
+    url(images/Overlay/15.jpg);
+}
+
 
 /*---------------------------------------------------*/
 /*Slider 2*/
