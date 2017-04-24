@@ -903,49 +903,64 @@ header .left-header .navi-level-1 li a.logo {
     }
 }
 
+/*---------------------------------------------------*/
 /*Slider 2*/
 #port_img {
-    height: 500px !important;
+    height: 450px;
 }
 
-.pgwSlider img {
-/*    height: 20px;*/
-
+.pgwSlider {
+    height: 100%
 }
+
 
 .pgwSlider .ps-current {
     position: relative;
+    width: 79%;
+/*    min-height: 400px;*/
 }
-
-/*
-.pgwSlider .ps-current img {
-    max-width: 100%;
-    min-width: auto;
-    width: auto;
-    height: 100%;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    transition: margin-top 250ms linear;
-}
-*/
 
 .pgwSlider .ps-current img {
 
     display: block;
     margin: auto;
-
     max-width: 100%;
     min-width: auto;
     width: auto;
-    height: 100%;
-    display: block;
+
+    height: auto;
+
     transition: margin-top 250ms linear;
     vertical-align: middle;
 
+}
+
+
+.pgwSlider .ps-list   {
+/*    height: 20px;*/
+/*    overflow-y: scroll;*/
+    width: 17%;
+}
+
+.pgwSlider > .ps-list > ul {
+/*    overflow-y: scroll;*/
+    margin-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    font-size: 0.8rem;
+    transition: opacity 200ms linear;
+}
+
+ul.pgwSlider > li,
+.pgwSlider > .ps-list > li {
+
+}
+
+.pgwSlider .ps-list img  {
+/*    height: 20px;*/
+/*    height: 100px !important;*/
 }
 
 ul.pgwSlider > li span, .pgwSlider > .ps-list > li span {
@@ -963,6 +978,47 @@ ul.pgwSlider > li span, .pgwSlider > .ps-list > li span {
 */
 }
 
+.arr-pj-container {
+    margin: 55px 0;
+}
+
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 991px){
+    #port_img {
+        height: 400px !important;
+    }
+
+    .arr-pj-container {
+        margin: 40px 0;
+    }
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 767px){
+    #port_img {
+        height: 360px !important;
+        height: auto
+    }
+
+    .arr-pj-container {
+        margin: 40px 0;
+    }
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 479px){
+    #port_img {
+        height: 330px !important;
+        height: auto
+    }
+
+        .arr-pj-container {
+        margin: 40px 0;
+    }
+
+
+}
 /*=====================================================*/
 /*TEAM*/
 /*=====================================================*/
