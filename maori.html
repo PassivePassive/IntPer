@@ -8,10 +8,6 @@
         <title>Maori Group::Interior Perspective</title>
 
          <!-- Flexslider: Carousel styles -->
-        <link rel="stylesheet" href="css/carousel/content-box.css">
-        <link rel="stylesheet" href="css/carousel/components.css">
-        <link rel="stylesheet" href="css/carousel/animations.css">
-        <link rel="stylesheet" href="css/carousel/flexslider.css">
         <link rel="stylesheet" href="css/carousel/skin.css">
         <link property="" rel="stylesheet" href="js/plugins/font-awesome/css/font-awesome.min.css">
 
@@ -29,6 +25,9 @@
         <!-- SCROLL BAR MOBILE MENU -->
         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 
+        <!-- slider -->
+        <link rel="stylesheet" href="PgwSlider/pgwslider.css">
+
         <!-- Main Style -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="intper.css">
@@ -40,9 +39,18 @@
         <!-- Favicons -->
         <link rel="shortcut icon" href="ip_logo.png">
 
+
         <!-- ============================= -->
         <!-- SCRIPTs -->
         <script src="js/vendor/jquery.min.js"></script>
+        <script src="PgwSlider/pgwslider.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                var pgwSlider = $('.pgwSlider').pgwSlider();
+            });
+
+        </script>
 
        <!-- PreLoad
         ================================================== -->
@@ -53,14 +61,13 @@
                 Royal_Preloader.config({
                     mode: 'logo', // 'number', "text" or "logo"
                     logo: 'images/IntPerspectImages/logos/ip_logo_icon.png',
-                    timeout: 1,
+                    timeout: 0,
                     showInfo: false,
                     opacity: 1,
                     background: ['#FFFFFF']
                 });
             })(jQuery);
         </script>
-
     </head>
 
     <!-- ========================================================================== -->
@@ -343,48 +350,39 @@
 
                                 </div><!-- End Row -->
 
-                            <!-- Content Image Big -->
-                            <div class="flexslider slider nav-middle-mobile" id="slider-demo-5" data-options="controlNav:false,animationLoop:false,slideshow:false,sync:#slider-demo-5-nav-thumb">
-                                <ul class="slides ">
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/maori/maori1.jpg" alt="maori pic1" />
-                                    </li>
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/maori/maori2.jpg" alt="maori pic2" />
+
+
+                            <!-- IMAGES -->
+                            <div id="port_img">
+                                <ul class="pgwSlider">
+                                    <li>
+                                        <img src="images/IntPerspectImages/intPersAssets/maori/tn/maori1.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/maori/maori1.jpg">
                                     </li>
                                     <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/maori/maori3.jpg" alt="maori pic3" />
+                                        <img src="images/IntPerspectImages/intPersAssets/maori/tn/maori2.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/maori/maori2.jpg">
                                     </li>
                                     <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/maori/maori4.jpg" alt="maori pic4" />
+                                        <img src="images/IntPerspectImages/intPersAssets/maori/tn/maori3.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/maori/maori3.jpg">
                                     </li>
                                     <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/maori/maori5.jpg" alt="maori pic5" />
+                                       <img src="images/IntPerspectImages/intPersAssets/maori/tn/maori4.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/maori/maori4.jpg">
+<!--                                        <span>The Exhibition Room</span>-->
                                     </li>
 
+                                    <li>
+                                        <img src="images/IntPerspectImages/intPersAssets/maori/tn/maori5.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/maori/maori5.jpg">
+                                    </li>
                                 </ul>
+
                             </div>
 
-                            <!-- Content Slider Images -->
-                            <div id="slider-demo-5-nav-thumb" class="flexslider carousel nav-thumb nav-middle-mobile" data-options="controlNav:false,animationLoop:false,slideshow:false,asNavFor:#slider-demo-5,minWidth:50,numItems:5">
-                                <ul class="slides">
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/maori/tn/maori1.jpg" alt="maori pic1" />
-                                    </li>
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/maori/tn/maori2.jpg" alt="maori pic2" />
-                                    </li>
-                                    <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/maori/tn/maori3.jpg" alt="maori pic3" />
-                                    </li>
-                                    <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/maori/tn/maori4.jpg" alt="maori pic4" />
-                                    </li>
-                                    <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/maori/tn/maori5.jpg" alt="maori pic5" />
-                                    </li>
 
-                                </ul>
+
                             </div>
 <!--                            <hr class="space" />-->
 
@@ -392,9 +390,9 @@
                             <div class="divider-line ln2"></div>
 
                             <p class="arr-pj-container text-center">
-                                <a href="creativehub.html" class="prev-pj-arr text-cap"><i class="fa fa-angle-left" aria-hidden="true"></i> Prev</a>
-                                <a href="index.html#portfolio" class="btn-portfolio"><i class="fa fa-th" aria-hidden="true"></i></a>
-                                <a href="prokraft.html" class="next-pj-arr text-cap">Next <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+                                <a href="creativehub.html" target="_blank" class="prev-pj-arr text-cap"><i class="fa fa-angle-left" aria-hidden="true"></i> Prev</a>
+                                <a href="index.html#portfolio" target="_blank" class="btn-portfolio"><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <a href="prokraft.html" target="_blank" class="next-pj-arr text-cap">Next <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
                             </p>
                             <div class="divider-line"></div>
 
@@ -483,15 +481,15 @@
     ================================================== -->
     <script src="js/plugins/custom.js"></script>
 
-
-
-    <!-- Carousel JS
-    ================================================== -->
+<!--
+     Carousel JS
+    ==================================================
     <script src="script.js"></script>
     <script src='js/plugins/parallax.min.js'></script>
     <script src="js/plugins/imagesloaded.min.js"></script>
     <script src='js/plugins/flexslider/jquery.flexslider-min.js'></script>
     <script src='js/plugins/jquery.tab-accordion.js'></script>
+-->
 
     </body>
 

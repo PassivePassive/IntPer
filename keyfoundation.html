@@ -7,11 +7,7 @@
 
         <title>Key Foundation::Interior Perspective</title>
 
-         <!-- Flexslider: Carousel styles -->
-        <link rel="stylesheet" href="css/carousel/content-box.css">
-        <link rel="stylesheet" href="css/carousel/components.css">
-        <link rel="stylesheet" href="css/carousel/animations.css">
-        <link rel="stylesheet" href="css/carousel/flexslider.css">
+        <!-- Flexslider: Carousel styles -->
         <link rel="stylesheet" href="css/carousel/skin.css">
         <link property="" rel="stylesheet" href="js/plugins/font-awesome/css/font-awesome.min.css">
 
@@ -29,6 +25,9 @@
         <!-- SCROLL BAR MOBILE MENU -->
         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 
+        <!-- slider -->
+        <link rel="stylesheet" href="PgwSlider/pgwslider.css">
+
         <!-- Main Style -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="intper.css">
@@ -40,9 +39,19 @@
         <!-- Favicons -->
         <link rel="shortcut icon" href="ip_logo.png">
 
+
+
         <!-- ============================= -->
         <!-- SCRIPTs -->
         <script src="js/vendor/jquery.min.js"></script>
+        <script src="PgwSlider/pgwslider.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                var pgwSlider = $('.pgwSlider').pgwSlider();
+            });
+
+        </script>
 
        <!-- PreLoad
         ================================================== -->
@@ -53,7 +62,7 @@
                 Royal_Preloader.config({
                     mode: 'logo', // 'number', "text" or "logo"
                     logo: 'images/IntPerspectImages/logos/ip_logo_icon.png',
-                    timeout: 1,
+                    timeout: 0,
                     showInfo: false,
                     opacity: 1,
                     background: ['#FFFFFF']
@@ -231,7 +240,7 @@
              <!--------------------------------------------------->
              <!-- sub header -->
 			<section>
-				<div class="sub-header sub-header-1 sub-header-portfolio-grid-1 fake-position">
+                <div class="sub-header sub-header-1 sub-header-portfolio-grid-1 fake-position">
 					<div class="sub-header-content">
 						<h2 class="text-cap white-text">Portfolio</h2>
                         <ol class="breadcrumb breadcrumb-arc text-cap">
@@ -245,17 +254,20 @@
 						</ol>
 					</div>
 				</div>
+
+
 			</section>
 			<!-- End Section Sub Header -->
 
+
             <!------------------------------------------------->
             <!-- Content Display 2--->
-			<section>
+			<section id="car1">
                 <div class="container">
                     <div class="row section-empty">
 
                         <!--- Project 1 -->
-                        <div id="keyfoundation" class="content single-project-warp">
+                        <div id="prokraft" class="content single-project-warp">
                             <hr class="space" />
 
                             <!-- icons ---->
@@ -342,76 +354,65 @@
 
                                 </div><!-- End Row -->
 
-                            <!-- Content Image Big -->
-                            <div class="flexslider slider nav-middle-mobile" id="slider-demo-5" data-options="controlNav:false,animationLoop:false,slideshow:false,sync:#slider-demo-5-nav-thumb">
-                                <ul class="slides ">
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation4.jpg" alt="keyfoundation pic3" />
-                                    </li>
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation5.jpg" alt="keyfoundation pic1" />
-                                    </li>
-                                    <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation6.jpg" alt="keyfoundation pic2" />
-                                    </li>
-                                    <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation7.jpg" alt="keyfoundation pic4" />
-                                    </li>
-                                    <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation8.jpg" alt="keyfoundation pic5" />
-                                    </li>
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation3.jpg" alt="keyfoundation pic6" />
-                                    </li>
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation2.jpg" alt="keyfoundation pic7" />
-                                    </li>
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation1.jpg" alt="keyfoundation pic8" />
-                                    </li>
-                                </ul>
-                            </div>
 
-                            <!-- Content Slider Images -->
-                            <div id="slider-demo-5-nav-thumb" class="flexslider carousel nav-thumb nav-middle-mobile" data-options="controlNav:false,animationLoop:false,slideshow:false,asNavFor:#slider-demo-5,minWidth:50,numItems:5">
-                                <ul class="slides">
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation4.jpg" alt="keyfoundation pic3" />
-                                    </li>
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation5.jpg" alt="keyfoundation pic1" />
+                            <!-- IMAGES -->
+                            <div id="port_img">
+                                <ul class="pgwSlider">
+                                    <li>
+                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation4.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation4.jpg">
                                     </li>
                                     <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation6.jpg" alt="keyfoundation pic2" />
+                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation5.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation5.jpg">
                                     </li>
                                     <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation7.jpg" alt="keyfoundation pic4" />
+                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation6.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation6.jpg">
                                     </li>
                                     <li>
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation8.jpg" alt="keyfoundation pic5" />
+                                       <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation7.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation7.jpg">
+<!--                                        <span>The Exhibition Room</span>-->
                                     </li>
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation3.jpg" alt="keyfoundation pic6" />
+
+                                    <li>
+                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation8.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation8.jpg">
                                     </li>
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation2.jpg" alt="keyfoundation pic7" />
+
+
+                                    <li>
+                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation3.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation3.jpg">
                                     </li>
-                                    <li class="">
-                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation1.jpg" alt="keyfoundation pic8" />
+
+                                    <li>
+                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation2.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation2.jpg">
+                                    </li>
+
+                                    <li>
+                                        <img src="images/IntPerspectImages/intPersAssets/keyFoundation/tn/keyFoundation1.jpg"
+                                             data-large-src="images/IntPerspectImages/intPersAssets/keyFoundation/keyFoundation1.jpg">
                                     </li>
 
                                 </ul>
+
                             </div>
-<!--                            <hr class="space" />-->
+
+
+  <!--                            <hr class="space" />-->
 
                             <!---Next/Previous -->
                             <div class="divider-line ln2"></div>
 
                             <p class="arr-pj-container text-center">
-                                <a href="thebizlounge.html" class="prev-pj-arr text-cap"><i class="fa fa-angle-left" aria-hidden="true"></i> Prev</a>
-                                <a href="index.html#portfolio" class="btn-portfolio"><i class="fa fa-th" aria-hidden="true"></i></a>
-                                <a href="creativehub.html" class="next-pj-arr text-cap">Next <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+                                <a href="thebizlounge.html" target="_blank" class="prev-pj-arr text-cap"><i class="fa fa-angle-left" aria-hidden="true"></i> Prev</a>
+                                <a href="index.html#portfolio" target="_blank" class="btn-portfolio"><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <a href="creativehub.html" target="_blank" class="next-pj-arr text-cap">Next <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
                             </p>
+
                             <div class="divider-line"></div>
 
                         </div>
@@ -420,6 +421,7 @@
                 </div>
 			</section>
 			<!-- End Portfolio Detail 1 -->
+
 
 			<div class="clearfix"></div>
 
@@ -468,7 +470,7 @@
                 </div>
                 <!-- End Right Footer -->
             </footer>
-            <!-- End Footer 1 -->
+            <!-- End Footer -->
 
 		</div>
 		<!-- End page -->
@@ -491,19 +493,21 @@
     ================================================== -->
      <script src="js/plugins/jquery.mobile-menu.js"></script>
 
+
  	<!-- Global Js
     ================================================== -->
     <script src="js/plugins/custom.js"></script>
 
 
-
     <!-- Carousel JS
     ================================================== -->
+<!--
     <script src="script.js"></script>
     <script src='js/plugins/parallax.min.js'></script>
     <script src="js/plugins/imagesloaded.min.js"></script>
     <script src='js/plugins/flexslider/jquery.flexslider-min.js'></script>
     <script src='js/plugins/jquery.tab-accordion.js'></script>
+-->
 
     </body>
 
