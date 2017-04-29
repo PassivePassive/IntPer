@@ -86,6 +86,14 @@ a {
 }
 
 
+/*image plus overlay*/
+.img-grad {
+    background:
+    /* top, transparent color, faked with gradient */
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    /* bottom, image */
+    url(images/Overlay/15.jpg);
+}
 
 /* Borders */
 .round-shadow {

@@ -504,17 +504,96 @@ header .left-header .navi-level-1 li a.logo {
 
 
 /*=====================================================*/
-/*PORTFOLIO*/
+/*PORTFOLIO SECTION*/
 /*=====================================================*/
+#portfolio {}
 
+#port_container {
+    position: relative;
+}
+
+
+.portfolio2, .portfolio1 {
+
+}
+
+.portfolio1 {}
+
+.portfolio2, .portfolio2>* {
+    display: none !important;
+
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 991px){
+
+    .portfolio2 {
+
+    }
+
+    .portfolio1 {
+
+    }
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 767px){
+
+    .portfolio2 {
+
+    }
+
+    .portfolio1 {
+
+    }
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 479px){
+
+    .portfolio2 {
+
+    }
+
+    .portfolio1 {
+
+    }
+
+}
+
+
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
 .element-item {
     height: 350px;
+    position: relative;
 
+    border: 1px solid #ccc;
+
+}
+
+.element-item .portfolio-img-demo, .element-item .project-info {
+/*
+    position: absolute;
+    height: 100%;
+    width: 100%;
+*/
 }
 
 .element-item .portfolio-img-demo {
+    height: 100%;
 
 }
+
+.element-item .portfolio-img-demo div {
+
+    z-index: 10;
+    cursor: pointer;
+
+}
+
+
+
 
 .element-item .project-info {
     margin-bottom: 0;
@@ -596,36 +675,6 @@ header .left-header .navi-level-1 li a.logo {
 /*=====================================================*/
 /*PORTFOLIO PAGE*/
 /*---------------------------------------------------*/
-
-.portfolio2 {
-    display: none;
-}
-
-/*---------------------------------------------------*/
-@media only screen and (max-width: 767px){
-
-    .portfolio2 {
-        display: block;
-    }
-
-    .portfolio1 {
-        display: none;
-    }
-}
-
-/*---------------------------------------------------*/
-@media only screen and (max-width: 479px){
-
-    .portfolio2 {
-        display: block;
-    }
-
-    .portfolio1 {
-        display: none;
-    }
-
-}
-
 
 /*---------------------------------------------------*/
 .section-empty {
