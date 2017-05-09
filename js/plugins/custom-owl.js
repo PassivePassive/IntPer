@@ -130,17 +130,20 @@
         $("body").on("click",".prev-blog-1-column",function(event){
           owlBlog1Column.trigger("owl.prev");
         });
+
+
     // End Owl Blog 1 column
     $("#owl-team-3-columns").owlCarousel({
                
                     autoPlay: false, //Set AutoPlay to 3 seconds
-                    items : 3,
-                    itemsDesktop      : [1199,3],
+                    items : 2,
+                    itemsDesktop      : [1199,2],
                     itemsDesktopSmall     : [979,2],
-                    itemsTablet       : [768,2],
+                    itemsTablet       : [768,1],
                     itemsMobile       : [479,1],
                     pagination:true,
                     navigation:false,
+                    margin: 100,
                
                 });
         var owlTeam3Columns = $("#owl-team-3-columns");

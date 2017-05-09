@@ -513,17 +513,6 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 
-.portfolio2, .portfolio1 {
-
-}
-
-.portfolio1 {}
-
-.portfolio2, .portfolio2>* {
-    display: none !important;
-
-}
-
 /*---------------------------------------------------*/
 @media only screen and (max-width: 991px){
 
@@ -537,38 +526,12 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 /*---------------------------------------------------*/
-@media only screen and (max-width: 767px){
-
-    .portfolio2 {
-
-    }
-
-    .portfolio1 {
-
-    }
-}
-
-/*---------------------------------------------------*/
-@media only screen and (max-width: 479px){
-
-    .portfolio2 {
-
-    }
-
-    .portfolio1 {
-
-    }
-
-}
-
-
-/*---------------------------------------------------*/
 /*---------------------------------------------------*/
 .element-item {
     height: 350px;
     position: relative;
 
-    border: 1px solid #ccc;
+/*    border: 1px solid #ccc;*/
 
 }
 
@@ -633,7 +596,7 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 .ip-padding3 {
-    padding: 50px 0 30px 0;
+    padding: 50px 0px 0px 0px;
 
 }
 /*---------------------------------------------------*/
@@ -1097,15 +1060,20 @@ ul.pgwSlider > li span, .pgwSlider > .ps-list > li span {
     margin-top: 50px;
 }
 
-.owl-wrapper {
+.owl-wrapper {}
 
+.owl-item {
+    padding: 0px 50px;
 }
 
-.owl-item {}
-
-.item-team {    
-
+.owl-item img {
+/*
+    width: 76%;
+    margin: 0 auto;
+*/
 }
+
+.item-team {}
 
 
 /*The image*/
@@ -1116,7 +1084,7 @@ ul.pgwSlider > li span, .pgwSlider > .ps-list > li span {
 
 /*The text*/
 .item-team .team-text {
-    width: 91%;
+    width: 75%;
     height: 100%;
 }
 
@@ -1134,7 +1102,7 @@ ul.pgwSlider > li span, .pgwSlider > .ps-list > li span {
 }
 
 .team-text .top_p {
-    margin-top: 10px
+    margin-top: 12px
 
 }
 
@@ -1174,7 +1142,7 @@ ul.pgwSlider > li span, .pgwSlider > .ps-list > li span {
     font-size: .8rem;
     position: fixed;
     top: 0px;
-    right: 7%
+    right: 15%
 }
 
 .item .cl2:hover {
@@ -1220,10 +1188,58 @@ ul.pgwSlider > li span, .pgwSlider > .ps-list > li span {
 }
 
 /*---------------------------------------------------*/
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 991px){
+    .owl-item {
+        padding: 0px;
+    }
 
+    .item-team .team-text {
+        width: 90%;
+        height: 100%;
+    }
+
+    .item .cl2 {
+        top: 0px;
+        right: 9%
+    }
 
 }
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 767px){
+    .owl-item {
+        padding: 0px 100px;
+    }
+
+    .item-team .team-text {
+        width: 66%;
+        height: 100%;
+    }
+
+    .item .cl2 {
+        top: 0px;
+        right: 16%
+    }
+
+}
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 579px){
+    .owl-item {
+        padding: 0px 50px;
+    }
+
+    .item-team .team-text {
+        width: 74%;
+        height: 100%;
+    }
+
+    .item .cl2 {
+        top: 0px;
+        right: 14%
+    }
+}
+
 
 /*---------------------------------------------------*/
 @media only screen and (max-width: 479px){
@@ -1231,8 +1247,21 @@ ul.pgwSlider > li span, .pgwSlider > .ps-list > li span {
         height: 300px;
         font-size: .9rem;
     }
-}
 
+    .owl-item {
+        padding: 0px 30px;
+    }
+
+    .item-team .team-text {
+        width: 77%;
+        height: 100%;
+    }
+
+    .item .cl2 {
+        top: 0px;
+        right: 15%
+    }
+}
 
 /*=====================================================*/
 /*CONTACT*/
