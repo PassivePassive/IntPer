@@ -16,12 +16,12 @@
             transitionEffect : 'fading',
 //            selectionMode : 'click',
             selectionMode : 'mouseOver',
-            autoSlide : true,
+            autoSlide : false,
             displayList : true,
             displayControls : false,
             touchControls : true,
             verticalCentering : false,
-            adaptiveHeight : true,
+            adaptiveHeight : false,
             maxHeight : 450,
             beforeSlide : null,
             afterSlide : null,
@@ -132,7 +132,13 @@
             pgwSlider.resizeEvent = setTimeout(function() {
 
                 // Adjust right list
-                var elementHeight = ((height - ((pgwSlider.slideCount - 1) * 6)) / pgwSlider.slideCount);
+                //// This right scroll element to takes ALL images
+                //,, var elementHeight = ((height - ((pgwSlider.slideCount - 1) * 6)) / pgwSlider.slideCount);
+
+                // This right scroll element to take 4 images only
+                var elementHeight = ((height - 24) / 4);
+
+
                 var elementWidth = (100 / pgwSlider.slideCount);
                 pgwSlider.plugin.find('.ps-list > li').css({ width: elementWidth + '%' });
 
@@ -147,11 +153,13 @@
                         });
                     } else {
                         pgwSlider.plugin.find('.ps-current').css('height', height);
+                        pgwSlider.plugin.find('.ps-list').css('height', height);
                         pgwSlider.plugin.find('.ps-list > li').css('height', elementHeight);
                     }
 
                 } else {
                     pgwSlider.plugin.find('.ps-current').css('height', height);
+                    pgwSlider.plugin.find('.ps-list').css('height', height);
                     pgwSlider.plugin.find('.ps-list > li').css('height', elementHeight);
                 }
 
