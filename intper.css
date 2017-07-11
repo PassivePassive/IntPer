@@ -3,8 +3,8 @@
 body {
 /*  font-size: 15px;*/
 /*  font-family: 'Roboto', sans-serif;*/
-/*  font-family: 'Ubuntu', sans-serif !important;*/
-    font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Ubuntu', sans-serif !important;
+/*    font-family: 'Open Sans', sans-serif !important;*/
 
 /*    font-family: 'Lora', serif !important;*/
 
@@ -100,8 +100,8 @@ body {
 .navi-level-1 > li a {
     display: block;
     line-height: 22px;
-/*    font-family: 'Montserrat', sans-serif;*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+/*    font-family: 'Open Sans', sans-serif;*/
 /*    font-family: 'Lora', serif !important;*/
     font-size: 12px;
     letter-spacing: 1px;
@@ -122,10 +122,11 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 .logo>img {
-/*     width: 140px !important;*/
+     width: 140px !important;
+     margin: 0px 0px 10px 0px;
 
-     width: 200px !important;
-/*     margin: 0px 0px 10px 0px;*/
+/*     width: 200px !important;*/
+
 }
 
 .header-v5 .left-header {
