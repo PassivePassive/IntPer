@@ -3919,9 +3919,13 @@ span.mini-cart-counter {
 .header-v4 nav li a {
   padding: 18px 20px 17px 20px;
 }
+
+/*
 .header-v4 nav li:last-child a:after {
   display: block;
 }
+*/
+
 .header-v4 .right-header {
   width: 90px;
   display: inline-block;
