@@ -360,7 +360,10 @@
                             <h1 class="text-cap">design & Build</h1>
                         </div>
                         <div class="col-md-7">
-                            <p>Interior Perspective Ltd is an Interior Design studio defining spaces with vision, visual interest while preserving function. We specialize in Residential Interiors, Commercial Interiors and Product Design. By immersing ourselves in each client’s culture, we create spaces that tell a meaningful story about the perspective of those who bring them to life.
+                            <p>
+                                Interior Perspective Ltd is an Interior Design and fit-out studio defining spaces with vision, visual interest while preserving function.
+                                <br>
+                                We specialize in Commercial and Retail Interiors and Product Design. By immersing ourselves in each client’s culture, we create spaces that tell a meaningful story about the perspective of those who bring them to life.
                             </p>
                         </div>
 
@@ -580,6 +583,22 @@
                                     <!------------------------------------------>
                                     <!-- the projects -->
 
+                                    <!-- Opay -->
+                                    <div id="opay" class="element-item Ecommercial">
+                                        <a class="portfolio-img-demo" href="opay.html" target="_blank">
+                                            <div></div>
+                                        </a>
+
+                                        <div class="project-info" style="cursor: pointer;" onclick="window.open('opay.html','_blank');">
+                                            <a href="opay.html" target="_blank">
+                                                <h4 class="title-project text-cap">Opay Ltd</h4>
+                                            </a>
+                                            <p class="cateProject">Commercial Interiors</p>
+
+                                        </div>
+
+                                    </div>
+
                                     <!-- Legibra New -->
                                     <div id="legibra_new" class="element-item Ecommercial">
                                         <a class="portfolio-img-demo" href="legibra_new.html" target="_blank">
@@ -587,7 +606,7 @@
                                         </a>
 
                                         <div class="project-info" style="cursor: pointer;" onclick="window.open('legibra_new.html','_blank');">
-                                            <a href="keyfoundation.html" target="_blank">
+                                            <a href="legibra_new.html" target="_blank">
                                                 <h4 class="title-project text-cap">Legibra Pitman House</h4>
                                             </a>
                                             <p class="cateProject">Commercial Interiors</p>
@@ -969,6 +988,12 @@
 
         //---------------------------------------//
         // Portfolio
+        $("#opay").vegas({
+            slides: [{
+                src: "/images/IntPerspectImages/intPersAssets/thumbnails/opay1.jpg"
+            }, ],
+        });
+
         $("#legibra_new").vegas({
             slides: [{
                 src: "/images/IntPerspectImages/intPersAssets/thumbnails/legibra_new.jpg"
