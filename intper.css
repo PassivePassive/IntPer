@@ -991,6 +991,8 @@ header .left-header .navi-level-1 li a.logo {
 }
 
 
+
+
 /*---------------------------------------------------*/
 /*Slider 2*/
 #port_img {
@@ -1878,4 +1880,40 @@ ul.social-dark li a.drk {
   #whatWeDo .row {
      margin: -10px !important;
    }
+}
+
+
+/*=====================================================*/
+/*CAREERS*/
+/*=====================================================*/
+
+#careers_banner {
+    height: 450px;
+    background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(
+      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)
+    ),
+    /* bottom, image */
+    url(images/IntPerspectImages/intPersAssets/careers/banner.jpg);
+}
+ @media only screen and (max-width: 767px){
+
+    /* sub header career */
+    #careers_banner  {
+        height: 450px !important;
+    }
+
+}
+
+@media only screen and (max-width: 479px){
+    /* sub header career */
+    #careers_banner  {
+        height: 400px !important;
+    }
+}
+
+
+.careers {
+    min-height: 650px;
 }
