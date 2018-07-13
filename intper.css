@@ -1886,34 +1886,33 @@ ul.social-dark li a.drk {
 /*=====================================================*/
 /*CAREERS*/
 /*=====================================================*/
-
 #careers_banner {
-    height: 450px;
+    height: 400px;
+/*    float: right;*/
     background:
     /* top, transparent black, faked with gradient */
     linear-gradient(
       rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)
     ),
     /* bottom, image */
-    url(images/IntPerspectImages/intPersAssets/careers/banner.jpg);
+/*    url(images/IntPerspectImages/intPersAssets/careers/banner_image.png);*/
 }
+
+
  @media only screen and (max-width: 767px){
 
     /* sub header career */
-    #careers_banner  {
-        height: 450px !important;
+   #careers_banner  {
+        height: 350px !important;
     }
 
 }
 
 @media only screen and (max-width: 479px){
     /* sub header career */
-    #careers_banner  {
-        height: 400px !important;
+    #careers, #careers_banner  {
+        height: 300px !important;
     }
+
 }
 
-
-.careers {
-    min-height: 650px;
-}
