@@ -254,7 +254,8 @@ header .left-header .navi-level-1 li a.logo {
     .left-header li,
     .left-header .logo,
     .left-header .logo>img {
-        width: 160px!important;
+        width: 120px!important;
+        margin: 0px; 
     }
 
     /* sub header portfolio and contacts */
@@ -1886,6 +1887,10 @@ ul.social-dark li a.drk {
 /*=====================================================*/
 /*CAREERS*/
 /*=====================================================*/
+.fake-position_2 {
+    margin-top: 80px;
+}
+
 #careers_banner {
     height: 400px;
 /*    float: right;*/
@@ -1911,8 +1916,129 @@ ul.social-dark li a.drk {
 @media only screen and (max-width: 479px){
     /* sub header career */
     #careers, #careers_banner  {
-        height: 300px !important;
+        height: 350px !important;
+    }
+
+    .fake-position_2 {
+        margin-top: 50px;
+    }
+}
+
+/*---------------------*/
+.career_info {
+      
+}
+
+.outline {
+    height: auto;
+    width: 500px;
+/*    border: 1px solid #ccc;*/
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.brder {
+    font-size: 1.5rem;
+    border: 2px solid #facc48;
+    width: 70%;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.brder .persp {
+    margin-top: 15px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000; 
+}
+
+.ln2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.ln3 {
+    font-size: 1rem;
+    font-weight: normal;
+/*    font-weight: 600;*/
+}
+
+/*
+.ln3 span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+*/
+
+.ln4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.ln4 span {
+    color: #facc48;
+}
+
+hr{
+    border: 1px solid #facc48;
+    width: 70%
+}
+
+.the_one span{
+    color: #facc48;
+}
+
+.the_one .ital{
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 767px){
+    
+    .brder {
+        font-size: 1.3rem;
+        border: 2px solid #facc48;
+        width: 70%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .brder .persp {
+        margin-top: 15px;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #000; 
     }
 
 }
 
+@media only screen and (max-width: 479px){
+    .outline {
+        width: 100%;
+    }
+    
+    .brder {
+        font-size: 1.2rem;
+        border: 2px solid #facc48;
+        width: 80%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .brder .persp {
+        margin-top: 10px;
+        font-size: 2.1rem;
+        font-weight: 600;
+        color: #000; 
+    }
+    
+    .ln3 {
+        font-size: 0.9rem;
+        word-wrap: normal;
+        width: 95%
+    }
+
+}
