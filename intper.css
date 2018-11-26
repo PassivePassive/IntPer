@@ -1966,16 +1966,26 @@ ul.social-dark li a.drk {
 
 .ln3 {
     font-size: 1rem;
+    font-weight: bold;
+/*    font-weight: 600;*/
+}
+
+.ln3 span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.ln3.report {
+    font-size: 0.8rem;
     font-weight: normal;
 /*    font-weight: 600;*/
 }
 
-/*
-.ln3 span {
-    font-size: 1rem;
+.ln3.report span {
+    font-size: 0.8rem;
     font-weight: normal;
+/*    font-weight: 600;*/
 }
-*/
 
 .ln4 {
     font-size: 0.9rem;
@@ -1986,6 +1996,8 @@ ul.social-dark li a.drk {
 .ln4 span {
     color: #facc48;
 }
+
+
 
 hr{
     border: 1px solid #facc48;
